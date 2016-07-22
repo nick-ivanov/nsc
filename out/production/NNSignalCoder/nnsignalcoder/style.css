@@ -1,0 +1,6 @@
+.grid {
+    -fx-border-width: 2px;
+    -fx-border-style: dotted;
+    -fx-border-color: black;
+    -fx-grid-lines-visible: true;
+}
