@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nnsignalcoder/CenterContainer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nnsignalcoder/RootContainer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nnsignalcoder/TODO.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nnsignalcoder/TopContainer.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/NNSignalCoder$1.class" afterPath="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Source code refactoring&#10;Main menu">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/NNSignalCoder.class" afterPath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/NNSignalCoder.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nnsignalcoder/NNSignalCoder.java" afterPath="$PROJECT_DIR$/src/nnsignalcoder/NNSignalCoder.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -687,7 +681,7 @@
       <option name="presentableId" value="Default" />
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
-      <workItem from="1469221918351" duration="9542000" />
+      <workItem from="1469221918351" duration="9628000" />
     </task>
     <task id="LOCAL-00001" summary="Added License.txt">
       <created>1469223902046</created>
@@ -696,11 +690,18 @@
       <option name="project" value="LOCAL" />
       <updated>1469223902046</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Source code refactoring&#10;Main menu">
+      <created>1469315055518</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1469315055518</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10844000" />
+    <option name="totallyTimeSpent" value="10930000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="34" y="23" width="1332" height="745" extended-state="0" />
@@ -783,7 +784,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added License.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added License.txt" />
+    <MESSAGE value="Source code refactoring&#10;Main menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Source code refactoring&#10;Main menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
