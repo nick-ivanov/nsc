@@ -18,23 +18,23 @@
 
 package nnsignalcoder;
 
-import javafx.application.Application;
-import javafx.scene.Scene;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
-public class NNSignalCoder extends Application {
-    RootContainer rootContainer;
-    Scene scene;
-    @Override
-    public void start(Stage primaryStage) {
-        rootContainer = new RootContainer(primaryStage);
-        scene = new Scene(rootContainer, 1280, 640);
-        primaryStage.setTitle("NNSignalCoder");
-        primaryStage.setScene(scene);
-        primaryStage.show();
-    }
+public class RootContainer extends BorderPane {
+    Stage stage;
+    CenterContainer centerContainer;
+    TopContainer topContainer;
 
-    public static void main(String[] args) {
-        launch(args);
+    RootContainer(Stage stage) {
+        super();
+        this.stage = stage;
+        topContainer = new TopContainer(this.stage);
+        centerContainer = new CenterContainer();
+
+        this.setTop(topContainer);
+        this.setCenter(centerContainer);
     }
 }
+
+
