@@ -1,6 +1,6 @@
 /*
     NNSignalCoder -- Network signal encoder
-    Copyright (C) 2015-2016  Nick Ivanov <nnivanov@gmail.com>
+    Copyright (C) 2015-2016  Nick Ivanov <nnrowan@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -37,8 +37,6 @@ public class TopContainer extends MenuBar {
     final MenuItem manual_item = new MenuItem("Documentation");
     final MenuItem about_item = new MenuItem("About");
 
-    //HelpWindow hw = new HelpWindow();
-
     public TopContainer(Stage stage) {
         menu1.getItems().add(quit_item);
         menu2.getItems().addAll(manual_item, about_item);
@@ -73,8 +71,6 @@ public class TopContainer extends MenuBar {
                             alert.setContentText(content);
                             alert.showAndWait();
                         }
-
-                        // hw.setText(name + " chosen");
                     }
                 };
 

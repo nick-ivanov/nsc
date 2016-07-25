@@ -1,12 +1,10 @@
 TO BE DONE
 [feel free working on the items from this list; move your name into IS BEING DONE list]
 
-* Create manually classes (in separate files) for the items of RootContainer (extends BorderPane)
-*
+* Use CSS
 
 IS BEING DONE:
 [contact the person working on it if you want to contribute;
 if you are working on something, move it here and leave your name]
 
-* Create class RootContainer extending BorderPane [Nick Ivanov]
-* Embed RootContainer into the program's environment [Nick Ivanov]
+* Substitute file images into Canvas images [Nick Ivanov]

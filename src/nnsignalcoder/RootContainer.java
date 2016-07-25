@@ -1,6 +1,6 @@
 /*
     NNSignalCoder -- Network signal encoder
-    Copyright (C) 2015-2016  Nick Ivanov <nnivanov@gmail.com>
+    Copyright (C) 2015-2016  Nick Ivanov <nnrowan@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -18,13 +18,19 @@
 
 package nnsignalcoder;
 
+import javafx.geometry.Insets;
+
+import javafx.scene.paint.Color;
+
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import sun.misc.Signal;
 
 public class RootContainer extends BorderPane {
     Stage stage;
     CenterContainer centerContainer;
     TopContainer topContainer;
+    SignalQuantumImage signal = new SignalQuantumImage(100, 100, "Hello", Color.RED, 2);
 
     RootContainer(Stage stage) {
         super();
@@ -34,6 +40,8 @@ public class RootContainer extends BorderPane {
 
         this.setTop(topContainer);
         this.setCenter(centerContainer);
+        this.setLeft(signal);
+        //signal.drawQuantum("s06");
     }
 }
 
