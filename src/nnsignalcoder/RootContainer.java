@@ -41,7 +41,7 @@ public class RootContainer extends BorderPane {
         this.setTop(topContainer);
         this.setCenter(centerContainer);
         this.setLeft(signal);
-        //signal.drawQuantum("s06");
+        //signal.drawQuantum("123698745236");
     }
 }
 

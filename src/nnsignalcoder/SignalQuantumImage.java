@@ -18,6 +18,7 @@
 
 package nnsignalcoder;
 
+import com.sun.xml.internal.fastinfoset.util.CharArray;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Group;
@@ -46,17 +47,46 @@ public class SignalQuantumImage extends Region {
         this.code = code;
         this.color = color;
         this.thickness = thickness;
-
     }
 
     public void drawQuantum(String quantum) {
         graphicsContext.setStroke(this.color);
         graphicsContext.setLineWidth(this.thickness);
 
-        if(quantum.equals("s06")) {
-            graphicsContext.strokeLine(0, 0, 0, height/2);
-            graphicsContext.strokeLine(0, height/2, width-1, height/2);
+        double x1, y1, x2, y2;
+        char c1, c2;
 
+        for(int i = 1; i < quantum.length(); i++) {
+            c1 = quantum.charAt(i-1);
+            c2 = quantum.charAt(i);
+
+            switch(c1) {
+                case '1': x1 = 0; y1 = 0; break;
+                case '2': x1 = width/2; y1 = 0; break;
+                case '3': x1 = width-1; y1 = 0; break;
+                case '4': x1 = 0; y1 = height/2; break;
+                case '5': x1 = width/2; y1 = height/2; break;
+                case '6': x1 = width-1; y1 = height/2; break;
+                case '7': x1 = 0; y1 = height-1; break;
+                case '8': x1 = width/2; y1 = height-1; break;
+                case '9': x1 = width-1; y1 = height-1; break;
+                default: x1 = 0; y1 = 0;
+            }
+
+            switch(c2) {
+                case '1': x2 = 0; y2 = 0; break;
+                case '2': x2 = width/2; y2 = 0; break;
+                case '3': x2 = width-1; y2 = 0; break;
+                case '4': x2 = 0; y2 = height/2; break;
+                case '5': x2 = width/2; y2 = height/2; break;
+                case '6': x2 = width-1; y2 = height/2; break;
+                case '7': x2 = 0; y2 = height-1; break;
+                case '8': x2 = width/2; y2 = height-1; break;
+                case '9': x2 = width-1; y2 = height-1; break;
+                default: x2 = 0; y2 = 0;
+            }
+
+            graphicsContext.strokeLine(x1, y1, x2, y2);
         }
     }
 
