@@ -30,22 +30,37 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
+import javafx.scene.paint.Color;
 
 public class CenterContainer extends VBox {
-    GridPane grid = new GridPane();
-    Button quit = new Button("Quit");
-    Label intro = new Label("Welcome to NNSignalCoder!");
-    Label initial = new Label("BITS:");
-    Spinner[] sp = new Spinner[16];
-    Spinner prev = new Spinner(0, 1, 0);
-    ImageView[][] im = new ImageView[6][16];
+    private final double quantumWidth = 80;
+    private final double quantumHeight = 80;
+    private final Color quantumColor = Color.BROWN;
+    private final double quantumThickness = 10;
 
-    Label nrzl = new Label("NRZ-L");
-    Label nrzpolar = new Label("Polar NRZ-L");
-    Label nrzi = new Label("NRZ-I");
-    Label bipolar = new Label("Bipolar-AMI");
-    Label manchester = new Label("Manchester");
-    Label dmanchester = new Label("Diff. Manchester");
+    private GridPane grid = new GridPane();
+    private Button quit = new Button("Quit");
+    private Label intro = new Label("Welcome to NNSignalCoder!");
+    private Label initial = new Label("BITS:");
+    private Spinner[] sp = new Spinner[16];
+    private Spinner prev = new Spinner(0, 1, 0);
+    private ImageView[][] im = new ImageView[6][16];
+
+    private SignalQuantumImage[][] qim = new SignalQuantumImage[6][16];
+
+    private Label nrzl = new Label("NRZ-L");
+    private Label nrzpolar = new Label("Polar NRZ-L");
+    private Label nrzi = new Label("NRZ-I");
+    private Label bipolar = new Label("Bipolar-AMI");
+    private Label manchester = new Label("Manchester");
+    private Label dmanchester = new Label("Diff. Manchester");
+
+//    private SignalQuantumImage nrzlQuantum = new SignalQuantumImage(quantumWidth, quantumHeight, quantumColor, quantumThickness, "13");
+//    private SignalQuantumImage nrzpolarQuantum = new SignalQuantumImage(quantumWidth, quantumHeight, quantumColor, quantumThickness, "79");
+//    private SignalQuantumImage nrziQuantum = new SignalQuantumImage(quantumWidth, quantumHeight, quantumColor, quantumThickness, "179");
+//    private SignalQuantumImage bipolarQuantum = new SignalQuantumImage(quantumWidth, quantumHeight, quantumColor, quantumThickness, "713");
+//    private SignalQuantumImage manchesterQuantum = new SignalQuantumImage(quantumWidth, quantumHeight, quantumColor, quantumThickness, "46");
+//    private SignalQuantumImage dmanchesterQuantum = new SignalQuantumImage(quantumWidth, quantumHeight, quantumColor, quantumThickness, "146");
 
     ImageView inrzl = new ImageView(
                 new Image(getClass().getResourceAsStream("images/01.png")));
@@ -62,19 +77,22 @@ public class CenterContainer extends VBox {
 
     CenterContainer() {
         super();
+
         for(int i = 0; i < 16; i++) {
             sp[i] = new Spinner(0, 1, 0);
-            sp[i].setMaxWidth(55);
+            //sp[i].setMaxWidth(55);
 
             for(int j = 0; j < 6; j++) {
-                im[j][i] = new ImageView(
-                        new Image(getClass().getResourceAsStream("images/dummy.png")));
-                im[j][i].setFitWidth(55);
-                im[j][i].setFitHeight(55);
+                //im[j][i] = new ImageView(
+                        //new Image(getClass().getResourceAsStream("images/dummy.png")));
+                //im[j][i].setFitWidth(55);
+                //im[j][i].setFitHeight(55);
+
+                qim[j][i] = new SignalQuantumImage(quantumWidth, quantumHeight, quantumColor, quantumThickness, "00");
             }
         }
 
-        update_sig();
+        updateSignals();
 
         // ======= LOOK =================
 
@@ -108,6 +126,9 @@ public class CenterContainer extends VBox {
         grid.setGridLinesVisible(true);
 
         // ========= RELATIONS ===============
+        grid.setPadding(new Insets(0));
+        grid.setHgap(0);
+        grid.setVgap(15);
         grid.add(initial, 0, 0);
         grid.add(prev, 1, 0);
 
@@ -127,8 +148,10 @@ public class CenterContainer extends VBox {
 
         for(int i = 0; i < 16; i++) {
             grid.add(sp[i], i+2, 0);
+            sp[i].setMaxWidth(quantumWidth-5);
             for(int j = 0; j < 6; j++) {
-                grid.add(im[j][i], i+2, j+1);
+                // grid.add(im[j][i], i+2, j+1);
+                grid.add(qim[j][i], i+2, j+1);
             }
         }
 
@@ -143,15 +166,15 @@ public class CenterContainer extends VBox {
             }
         });
 
-        prev.valueProperty().addListener((obs, oldValue, newValue) -> update_sig());
+        prev.valueProperty().addListener((obs, oldValue, newValue) -> updateSignals());
 
         for(int i = 0; i < 16; i++) {
-            sp[i].valueProperty().addListener((obs, oldValue, newValue) -> update_sig());
+            sp[i].valueProperty().addListener((obs, oldValue, newValue) -> updateSignals());
         }
 
     }
 
-    public void set_nrzl()
+    private void processNRZL()
     {
         int a, p;
 
@@ -160,19 +183,27 @@ public class CenterContainer extends VBox {
         for(int i = 0; i < 16; i++) {
             a = (int) sp[i].getValue();
 
+//            if(a == 0) {
+//                if(p == 0) { im[0][i].setImage(new Image(getClass().getResourceAsStream("images/s02.png"))); }
+//                else { im[0][i].setImage(new Image(getClass().getResourceAsStream("images/s03.png"))); }
+//            } else {
+//                if(p == 0) { im[0][i].setImage(new Image(getClass().getResourceAsStream("images/s04.png"))); }
+//                else { im[0][i].setImage(new Image(getClass().getResourceAsStream("images/s01.png"))); }
+//            }
+
             if(a == 0) {
-                if(p == 0) { im[0][i].setImage(new Image(getClass().getResourceAsStream("images/s02.png"))); }
-                else { im[0][i].setImage(new Image(getClass().getResourceAsStream("images/s03.png"))); }
+                if(p == 0) { qim[0][i].drawQuantum("79"); }
+                else { qim[0][i].drawQuantum("179"); }
             } else {
-                if(p == 0) { im[0][i].setImage(new Image(getClass().getResourceAsStream("images/s04.png"))); }
-                else { im[0][i].setImage(new Image(getClass().getResourceAsStream("images/s01.png"))); }
+                if(p == 0) { qim[0][i].drawQuantum("713"); }
+                else { qim[0][i].drawQuantum("13"); }
             }
 
             p = (int) sp[i].getValue();
         }
     }
 
-    public void set_nrzpolar()
+    private void processNRZLPolar()
     {
         int a, p;
 
@@ -181,19 +212,27 @@ public class CenterContainer extends VBox {
         for(int i = 0; i < 16; i++) {
             a = (int) sp[i].getValue();
 
+//            if(a == 0) {
+//                if(p == 0) { im[1][i].setImage(new Image(getClass().getResourceAsStream("images/s02.png"))); }
+//                else { im[1][i].setImage(new Image(getClass().getResourceAsStream("images/s03.png"))); }
+//            } else {
+//                if(p == 0) { im[1][i].setImage(new Image(getClass().getResourceAsStream("images/s04.png"))); }
+//                else { im[1][i].setImage(new Image(getClass().getResourceAsStream("images/s01.png"))); }
+//            }
+
             if(a == 0) {
-                if(p == 0) { im[1][i].setImage(new Image(getClass().getResourceAsStream("images/s02.png"))); }
-                else { im[1][i].setImage(new Image(getClass().getResourceAsStream("images/s03.png"))); }
+                if(p == 0) { qim[1][i].drawQuantum("79"); }
+                else { qim[1][i].drawQuantum("179"); }
             } else {
-                if(p == 0) { im[1][i].setImage(new Image(getClass().getResourceAsStream("images/s04.png"))); }
-                else { im[1][i].setImage(new Image(getClass().getResourceAsStream("images/s01.png"))); }
+                if(p == 0) { qim[1][i].drawQuantum("713"); }
+                else { qim[1][i].drawQuantum("13"); }
             }
 
             p = (int) sp[i].getValue();
         }
     }
 
-    public void set_nrzi()
+    private void processNRZI()
     {
         int a, p;
 
@@ -201,19 +240,28 @@ public class CenterContainer extends VBox {
 
         for(int i = 0; i < 16; i++) {
             a = (int) sp[i].getValue();
+
+//            if(a == 1) {
+//                if(p == 1) { im[2][i].setImage(new Image(getClass().getResourceAsStream("images/s03.png"))); p = 0; }
+//                else { im[2][i].setImage(new Image(getClass().getResourceAsStream("images/s04.png"))); p = 1; }
+//            } else {
+//                if(p == 1) { im[2][i].setImage(new Image(getClass().getResourceAsStream("images/s01.png"))); p = 1; }
+//                else { im[2][i].setImage(new Image(getClass().getResourceAsStream("images/s02.png"))); p = 0; }
+//            }
 
             if(a == 1) {
-                if(p == 1) { im[2][i].setImage(new Image(getClass().getResourceAsStream("images/s03.png"))); p = 0; }
-                else { im[2][i].setImage(new Image(getClass().getResourceAsStream("images/s04.png"))); p = 1; }
+                if(p == 1) { qim[2][i].drawQuantum("179"); p = 0; }
+                else { qim[2][i].drawQuantum("713"); p = 1; }
             } else {
-                if(p == 1) { im[2][i].setImage(new Image(getClass().getResourceAsStream("images/s01.png"))); p = 1; }
-                else { im[2][i].setImage(new Image(getClass().getResourceAsStream("images/s02.png"))); p = 0; }
+                if(p == 1) { qim[2][i].drawQuantum("13"); p = 1; }
+                else { qim[2][i].drawQuantum("79"); p = 0; }
             }
+
 
         }
     }
 
-    public void set_bipolar()
+    private void processBipolar()
     {
         int a, p, pp;
 
@@ -223,25 +271,37 @@ public class CenterContainer extends VBox {
         for(int i = 0; i < 16; i++) {
             a = (int) sp[i].getValue();
 
+//            if(a == 0) {
+//                if(p == 1) { im[3][i].setImage(new Image(getClass().getResourceAsStream("images/s06.png"))); p = 0; }
+//                else if(p == -1) { im[3][i].setImage(new Image(getClass().getResourceAsStream("images/s08.png"))); p = 0; }
+//                else { im[3][i].setImage(new Image(getClass().getResourceAsStream("images/s05.png"))); p = 0; }
+//            } else { // a == 1
+//                if(pp == -1) {
+//                    if(p == 0) { im[3][i].setImage(new Image(getClass().getResourceAsStream("images/s09.png"))); p = 1; pp = 1; }
+//                    else { im[3][i].setImage(new Image(getClass().getResourceAsStream("images/s04.png"))); p = 1; pp = 1; }
+//                } else {
+//                    if(p == 0) { im[3][i].setImage(new Image(getClass().getResourceAsStream("images/s07.png"))); p = -1; pp = -1; }
+//                    else { im[3][i].setImage(new Image(getClass().getResourceAsStream("images/s03.png"))); p = -1; pp = -1; }
+//                }
+//            }
+
             if(a == 0) {
-                if(p == 1) { im[3][i].setImage(new Image(getClass().getResourceAsStream("images/s06.png"))); p = 0; }
-                else if(p == -1) { im[3][i].setImage(new Image(getClass().getResourceAsStream("images/s08.png"))); p = 0; }
-                else { im[3][i].setImage(new Image(getClass().getResourceAsStream("images/s05.png"))); p = 0; }
+                if(p == 1) { qim[3][i].drawQuantum("146"); p = 0; }
+                else if(p == -1) { qim[3][i].drawQuantum("746"); p = 0; }
+                else { qim[3][i].drawQuantum("46"); p = 0; }
             } else { // a == 1
                 if(pp == -1) {
-                    if(p == 0) { im[3][i].setImage(new Image(getClass().getResourceAsStream("images/s09.png"))); p = 1; pp = 1; }
-                    else { im[3][i].setImage(new Image(getClass().getResourceAsStream("images/s04.png"))); p = 1; pp = 1; }
+                    if(p == 0) { qim[3][i].drawQuantum("413"); p = 1; pp = 1; }
+                    else { qim[3][i].drawQuantum("713"); p = 1; pp = 1; }
                 } else {
-                    if(p == 0) { im[3][i].setImage(new Image(getClass().getResourceAsStream("images/s07.png"))); p = -1; pp = -1; }
-                    else { im[3][i].setImage(new Image(getClass().getResourceAsStream("images/s03.png"))); p = -1; pp = -1; }
+                    if(p == 0) { qim[3][i].drawQuantum("479"); p = -1; pp = -1; }
+                    else { qim[3][i].drawQuantum("179"); p = -1; pp = -1; }
                 }
-
             }
-
         }
     }
 
-    public void set_manchester()
+    private void processManchester()
     {
         int a, p;
 
@@ -250,19 +310,27 @@ public class CenterContainer extends VBox {
         for(int i = 0; i < 16; i++) {
             a = (int) sp[i].getValue();
 
+//            if(a == 0) {
+//                if(p == 1) { qim[4][i].setImage(new Image(getClass().getResourceAsStream("images/s10.png"))); }
+//                else { qim[4][i].setImage(new Image(getClass().getResourceAsStream("images/s11.png"))); }
+//            } else {
+//                if(p == 1) { qim[4][i].setImage(new Image(getClass().getResourceAsStream("images/s13.png"))); }
+//                else { qim[4][i].setImage(new Image(getClass().getResourceAsStream("images/s12.png"))); }
+//            }
+
             if(a == 0) {
-                if(p == 1) { im[4][i].setImage(new Image(getClass().getResourceAsStream("images/s10.png"))); }
-                else { im[4][i].setImage(new Image(getClass().getResourceAsStream("images/s11.png"))); }
+                if(p == 1) { qim[4][i].drawQuantum("1289"); }
+                else { qim[4][i].drawQuantum("71289"); }
             } else {
-                if(p == 1) { im[4][i].setImage(new Image(getClass().getResourceAsStream("images/s13.png"))); }
-                else { im[4][i].setImage(new Image(getClass().getResourceAsStream("images/s12.png"))); }
+                if(p == 1) { qim[4][i].drawQuantum("17823"); }
+                else { qim[4][i].drawQuantum("7823"); }
             }
 
             p = (int) sp[i].getValue();
         }
     }
 
-    public void set_dmanchester()
+    private void processDManchester()
     {
         int a, p;
 
@@ -271,24 +339,32 @@ public class CenterContainer extends VBox {
         for(int i = 0; i < 16; i++) {
             a = (int) sp[i].getValue();
 
+//            if(a == 0) {
+//                if(p == 1) { im[5][i].setImage(new Image(getClass().getResourceAsStream("images/s13.png"))); p = 1; }
+//                else { im[5][i].setImage(new Image(getClass().getResourceAsStream("images/s11.png"))); p = 0; }
+//            } else {
+//                if(p == 1) { im[5][i].setImage(new Image(getClass().getResourceAsStream("images/s10.png"))); p = 0; }
+//                else { im[5][i].setImage(new Image(getClass().getResourceAsStream("images/s12.png"))); p = 1; }
+//            }
+
             if(a == 0) {
-                if(p == 1) { im[5][i].setImage(new Image(getClass().getResourceAsStream("images/s13.png"))); p = 1; }
-                else { im[5][i].setImage(new Image(getClass().getResourceAsStream("images/s11.png"))); p = 0; }
+                if(p == 1) { qim[5][i].drawQuantum("17823"); p = 1; }
+                else { qim[5][i].drawQuantum("71289"); p = 0; }
             } else {
-                if(p == 1) { im[5][i].setImage(new Image(getClass().getResourceAsStream("images/s10.png"))); p = 0; }
-                else { im[5][i].setImage(new Image(getClass().getResourceAsStream("images/s12.png"))); p = 1; }
+                if(p == 1) { qim[5][i].drawQuantum("1289"); p = 0; }
+                else { qim[5][i].drawQuantum("7823"); p = 1; }
             }
         }
     }
 
-    public void update_sig()
+    private void updateSignals()
     {
-        set_nrzl();
-        set_nrzpolar();
-        set_nrzi();
-        set_bipolar();
-        set_manchester();
-        set_dmanchester();
+        processNRZL();
+        processNRZLPolar();
+        processNRZI();
+        processBipolar();
+        processManchester();
+        processDManchester();
     }
 
 

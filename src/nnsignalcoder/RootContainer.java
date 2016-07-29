@@ -18,30 +18,25 @@
 
 package nnsignalcoder;
 
-import javafx.geometry.Insets;
-
-import javafx.scene.paint.Color;
-
+import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import sun.misc.Signal;
 
 public class RootContainer extends BorderPane {
     Stage stage;
+    ScrollPane centerScrollPane = new ScrollPane();
     CenterContainer centerContainer;
     TopContainer topContainer;
-    SignalQuantumImage signal = new SignalQuantumImage(100, 100, "Hello", Color.RED, 2);
 
     RootContainer(Stage stage) {
         super();
         this.stage = stage;
         topContainer = new TopContainer(this.stage);
         centerContainer = new CenterContainer();
+        centerScrollPane.setContent(centerContainer);
 
         this.setTop(topContainer);
-        this.setCenter(centerContainer);
-        this.setLeft(signal);
-        //signal.drawQuantum("123698745236");
+        this.setCenter(centerScrollPane);
     }
 }
 
