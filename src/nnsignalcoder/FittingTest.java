@@ -1,6 +1,7 @@
 package nnsignalcoder;
 
 import javafx.application.Application;
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.layout.GridPane;
@@ -19,7 +20,7 @@ public class FittingTest extends Application {
         launch(args);
     }
 
-    GridPane grid;
+    HBox grid;
     SignalQuantumImage image1 = new SignalQuantumImage(55, 55, BLUE, 3, "345");
     SignalQuantumImage image2 = new SignalQuantumImage(55, 55, RED, 5, "1473");
 
@@ -27,11 +28,15 @@ public class FittingTest extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        grid = new GridPane();
+        grid = new HBox();
 
-        grid.setGridLinesVisible(true);
-        grid.add(image1, 0, 0);
-        grid.add(image2, 1, 0);
+//        grid.setGridLinesVisible(true);
+//        grid.add(image1, 0, 0);
+//        grid.add(image2, 1, 0);
+
+        grid.setPadding(new Insets(0));
+        grid.getChildren().addAll(image1, image2);
+
 
         drawImages();
 

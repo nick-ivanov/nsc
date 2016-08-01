@@ -24,7 +24,7 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.layout.Region;
 import javafx.scene.paint.Color;
 
-public class SignalQuantumImage extends Region {
+public class SignalQuantumImage extends Canvas {
     Canvas canvas;
     GraphicsContext graphicsContext;
     private double width, height, thickness;
@@ -33,22 +33,21 @@ public class SignalQuantumImage extends Region {
 
     // TODO: Use enum instead of string
     SignalQuantumImage(double width, double height, Color color, double thickness, String code) {
-        super();
+        super(width, height);
         canvas = new Canvas(width, height);
-        graphicsContext = canvas.getGraphicsContext2D();
-        this.setPrefSize(width+thickness, height+thickness);
-        this.setMinSize(width+thickness, height+thickness);
-        this.getChildren().add(canvas);
+        this.setStyle("-fx-background-color: aqua");
+        graphicsContext = this.getGraphicsContext2D();
+        this.setStyle("-fx-background-color: crimson");
         this.width = width;
         this.height = height;
         this.color = color;
         this.thickness = thickness;
         this.code = code;
 
-        canvas.setWidth(width);
-        canvas.setHeight(height);
-        this.setPadding(new Insets(0));
-        this.setMaxSize(width, height);
+        this.setWidth(width);
+        this.setHeight(height);
+        super.setWidth(width);
+        super.setHeight(height);
     }
 
     public void setCode(String code) {
