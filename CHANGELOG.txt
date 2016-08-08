@@ -1,0 +1,4 @@
+== VERSION 0.0.3 ==
+* Old versioning is deprecated
+* README.txt added
+* CHANGELOG.txt added
