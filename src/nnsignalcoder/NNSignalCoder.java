@@ -1,6 +1,6 @@
 /*
     NNSignalCoder -- Network signal encoder
-    Copyright (C) 2015-2016  Nick Ivanov <nnrowan@gmail.com>
+    Copyright (C) 2015-2017  Nick Ivanov <nnrowan@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -29,7 +29,7 @@ public class NNSignalCoder extends Application {
     public void start(Stage primaryStage) {
         rootContainer = new RootContainer(primaryStage);
         scene = new Scene(rootContainer, 1280, 640);
-        primaryStage.setTitle("NNSignalCoder");
+        primaryStage.setTitle("Network Signal Coder");
         primaryStage.setScene(scene);
         primaryStage.show();
     }

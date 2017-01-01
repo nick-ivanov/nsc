@@ -1,5 +1,5 @@
 NNSignalCoder - Network signal encoder
-Copyright (C) 2016 Nick Ivanov <nnrowan@gmail.com>
+Copyright (C) 2015-2017 Nick Ivanov <nnrowan@gmail.com>
 
 * CURRENT VERSION: 0.0.3 (see CHANGELOG.txt or [http://nnsignalcoder.org?changelog] to learn what's cooking in this version)
 * LICENSE: GNU General Public License ver. 3
@@ -9,5 +9,4 @@ Copyright (C) 2016 Nick Ivanov <nnrowan@gmail.com>
 * Enjoy.
 
 == QUESTIONS, FEEDBACK, BUGS (QFB) ==
-* http://nnsignalcoder.org/
 * nnrowan@gmail.com

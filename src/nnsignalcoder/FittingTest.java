@@ -1,3 +1,21 @@
+/*
+    NNSignalCoder -- Network signal encoder
+    Copyright (C) 2015-2017  Nick Ivanov <nnrowan@gmail.com>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 package nnsignalcoder;
 
 import javafx.application.Application;
@@ -24,16 +42,9 @@ public class FittingTest extends Application {
     SignalQuantumImage image1 = new SignalQuantumImage(55, 55, BLUE, 3, "345");
     SignalQuantumImage image2 = new SignalQuantumImage(55, 55, RED, 5, "1473");
 
-
-
     @Override
     public void start(Stage primaryStage) {
         grid = new HBox();
-
-//        grid.setGridLinesVisible(true);
-//        grid.add(image1, 0, 0);
-//        grid.add(image2, 1, 0);
-
         grid.setPadding(new Insets(0));
         grid.getChildren().addAll(image1, image2);
 
