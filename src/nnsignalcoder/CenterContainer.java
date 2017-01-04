@@ -35,7 +35,7 @@ import javafx.scene.paint.Color;
 public class CenterContainer extends VBox {
     private final double quantumWidth = 80;
     private final double quantumHeight = 80;
-    private final Color quantumColor = Color.BROWN;
+    private final Color quantumColor = Color.DARKKHAKI;
     private final double quantumThickness = 10;
 
     private GridPane grid = new GridPane();
@@ -150,7 +150,9 @@ public class CenterContainer extends VBox {
             }
         }
 
-        this.getChildren().addAll(intro, grid, quit);
+
+        // Add here additional top item
+        this.getChildren().addAll(grid, quit);
 
         // ======= EVENT HANDLING ==========
         quit.setOnAction(new EventHandler<ActionEvent>() {

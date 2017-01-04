@@ -30,8 +30,9 @@ import javafx.stage.Stage;
 
 
 public class TopContainer extends MenuBar {
-    final Menu menu1 = new Menu("Menu");
-    final Menu menu2 = new Menu("Help");
+    final Menu menu1 = new Menu("File");
+    final Menu menu2 = new Menu("Edit");
+    final Menu menu3 = new Menu("Help");
 
     final MenuItem quit_item = new MenuItem("Quit");
     final MenuItem manual_item = new MenuItem("Documentation");
@@ -39,8 +40,8 @@ public class TopContainer extends MenuBar {
 
     public TopContainer(Stage stage) {
         menu1.getItems().add(quit_item);
-        menu2.getItems().addAll(manual_item, about_item);
-        this.getMenus().addAll(menu1, menu2);
+        menu3.getItems().addAll(manual_item, about_item);
+        this.getMenus().addAll(menu1, menu2, menu3);
 
         setEvents(stage);
     }
@@ -52,6 +53,7 @@ public class TopContainer extends MenuBar {
                         String name = ((MenuItem)ae.getTarget()).getText();
 
                         if(name.equals("Quit")) { Platform.exit(); }
+
                         if(name.equals("Documentation")) {
                             Alert alert = new Alert(AlertType.INFORMATION);
                             alert.setTitle("IP46 Help");
@@ -62,11 +64,12 @@ public class TopContainer extends MenuBar {
                             alert.setContentText(content);
                             alert.showAndWait();
                         }
+
                         if(name.equals("About")) {
                             Alert alert = new Alert(AlertType.INFORMATION);
                             alert.setTitle("About NNSignalCoder");
                             alert.setHeaderText("About NNSignalCoder");
-                            String content = "Copyright (C) 2016 Nick Ivanov (nnrowan@gmail.com)\n\n" +
+                            String content = "Copyright (C) 2016-2017 Nick Ivanov (nnrowan@gmail.com)\n\n" +
                                     "Distributed under GNU GPL v.3";
                             alert.setContentText(content);
                             alert.showAndWait();

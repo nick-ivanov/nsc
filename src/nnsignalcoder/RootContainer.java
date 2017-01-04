@@ -39,5 +39,3 @@ public class RootContainer extends BorderPane {
         this.setCenter(centerScrollPane);
     }
 }
-
-
