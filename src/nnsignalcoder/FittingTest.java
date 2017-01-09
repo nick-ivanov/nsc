@@ -32,8 +32,6 @@ import static javafx.scene.paint.Color.*;
 
 public class FittingTest extends Application {
 
-
-
     public static void main(String[] args) {
         launch(args);
     }

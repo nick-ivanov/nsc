@@ -35,8 +35,9 @@ import javafx.scene.paint.Color;
 public class CenterContainer extends VBox {
     private final double quantumWidth = 80;
     private final double quantumHeight = 80;
-    private final Color quantumColor = Color.DARKKHAKI;
+    private final Color quantumColor = Color.BLACK;
     private final double quantumThickness = 10;
+    private final int numberOfBits = 16;
 
     private GridPane grid = new GridPane();
     private Button quit = new Button("Quit");
@@ -78,9 +79,10 @@ public class CenterContainer extends VBox {
     CenterContainer() {
         super();
 
-        for(int i = 0; i < 16; i++) {
+        for(int i = 0; i < numberOfBits; i++) {
             sp[i] = new Spinner(0, 1, 0);
-            //sp[i].setMaxWidth(55);
+            sp[i].setPadding(new Insets(5));
+            sp[i].setMaxWidth(55);
 
             for(int j = 0; j < 6; j++) {
                 qim[j][i] = new SignalQuantumImage(quantumWidth, quantumHeight, quantumColor, quantumThickness, "00");
@@ -95,7 +97,7 @@ public class CenterContainer extends VBox {
 
         prev.setMaxWidth(65);
         prev.setPadding(new Insets(5));
-        prev.setStyle("-fx-background-color: red;");
+        //prev.setStyle("-fx-background-color: red;");
         initial.setPadding(new Insets(5));
 
         nrzl.setPadding(new Insets(10));
@@ -150,7 +152,6 @@ public class CenterContainer extends VBox {
             }
         }
 
-
         // Add here additional top item
         this.getChildren().addAll(grid, quit);
 
@@ -165,7 +166,7 @@ public class CenterContainer extends VBox {
 
         prev.valueProperty().addListener((obs, oldValue, newValue) -> updateSignals());
 
-        for(int i = 0; i < 16; i++) {
+        for(int i = 0; i < numberOfBits; i++) {
             sp[i].valueProperty().addListener((obs, oldValue, newValue) -> updateSignals());
         }
 
@@ -177,7 +178,7 @@ public class CenterContainer extends VBox {
 
         p = (int) prev.getValue();
 
-        for(int i = 0; i < 16; i++) {
+        for(int i = 0; i < numberOfBits; i++) {
             a = (int) sp[i].getValue();
 
 //            if(a == 0) {
@@ -206,7 +207,7 @@ public class CenterContainer extends VBox {
 
         p = (int) prev.getValue();
 
-        for(int i = 0; i < 16; i++) {
+        for(int i = 0; i < numberOfBits; i++) {
             a = (int) sp[i].getValue();
 
 //            if(a == 0) {
@@ -235,7 +236,7 @@ public class CenterContainer extends VBox {
 
         p = (int) prev.getValue();
 
-        for(int i = 0; i < 16; i++) {
+        for(int i = 0; i < numberOfBits; i++) {
             a = (int) sp[i].getValue();
 
 //            if(a == 1) {
@@ -265,7 +266,7 @@ public class CenterContainer extends VBox {
         p = (int) prev.getValue();
         pp = -1;
 
-        for(int i = 0; i < 16; i++) {
+        for(int i = 0; i < numberOfBits; i++) {
             a = (int) sp[i].getValue();
 
 //            if(a == 0) {
@@ -304,7 +305,7 @@ public class CenterContainer extends VBox {
 
         p = (int) prev.getValue();
 
-        for(int i = 0; i < 16; i++) {
+        for(int i = 0; i < numberOfBits; i++) {
             a = (int) sp[i].getValue();
 
 //            if(a == 0) {
@@ -333,7 +334,7 @@ public class CenterContainer extends VBox {
 
         p = (int) prev.getValue();
 
-        for(int i = 0; i < 16; i++) {
+        for(int i = 0; i < numberOfBits; i++) {
             a = (int) sp[i].getValue();
 
 //            if(a == 0) {
