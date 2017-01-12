@@ -1,5 +1,7 @@
 /*
-    NNSignalCoder -- Network signal encoder
+    Network Signal Coder -- a utility that converts binary
+        sequences into standard network physical signals.
+
     Copyright (C) 2015-2017  Nick Ivanov <nnrowan@gmail.com>
 
     This program is free software: you can redistribute it and/or modify

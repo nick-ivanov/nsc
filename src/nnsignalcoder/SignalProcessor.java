@@ -20,165 +20,23 @@
 
 package nnsignalcoder;
 
-import javafx.application.Platform;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import javafx.geometry.Insets;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.Spinner;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.VBox;
-import javafx.scene.text.Font;
-import javafx.scene.paint.Color;
 
-public class CenterContainer extends VBox {
-    private final double quantumWidth = 80;
-    private final double quantumHeight = 80;
-    private final Color quantumColor = Color.BLACK;
-    private final double quantumThickness = 10;
-    private final int numberOfBits = 16;
-
-    private GridPane grid = new GridPane();
-    //private Button quit = new Button("Quit");
-    private Label intro = new Label("Welcome to NNSignalCoder!");
-    private Label initial = new Label("BITS:");
-    private Spinner[] sp = new Spinner[16];
-    private Spinner prev = new Spinner(0, 1, 0);
-    private ImageView[][] im = new ImageView[6][16];
-
-    private SignalQuantumImage[][] qim = new SignalQuantumImage[6][16];
-
-    private Label nrzl = new Label("NRZ-L");
-    private Label nrzpolar = new Label("Polar NRZ-L");
-    private Label nrzi = new Label("NRZ-I");
-    private Label bipolar = new Label("Bipolar-AMI");
-    private Label manchester = new Label("Manchester");
-    private Label dmanchester = new Label("Diff. Manchester");
-
-//    private SignalQuantumImage nrzlQuantum = new SignalQuantumImage(quantumWidth, quantumHeight, quantumColor, quantumThickness, "13");
-//    private SignalQuantumImage nrzpolarQuantum = new SignalQuantumImage(quantumWidth, quantumHeight, quantumColor, quantumThickness, "79");
-//    private SignalQuantumImage nrziQuantum = new SignalQuantumImage(quantumWidth, quantumHeight, quantumColor, quantumThickness, "179");
-//    private SignalQuantumImage bipolarQuantum = new SignalQuantumImage(quantumWidth, quantumHeight, quantumColor, quantumThickness, "713");
-//    private SignalQuantumImage manchesterQuantum = new SignalQuantumImage(quantumWidth, quantumHeight, quantumColor, quantumThickness, "46");
-//    private SignalQuantumImage dmanchesterQuantum = new SignalQuantumImage(quantumWidth, quantumHeight, quantumColor, quantumThickness, "146");
-
-    ImageView inrzl = new ImageView(
-                new Image(getClass().getResourceAsStream("images/01.png")));
-    ImageView inrzpolar = new ImageView(
-                new Image(getClass().getResourceAsStream("images/02.png")));
-    ImageView inrzi = new ImageView(
-                new Image(getClass().getResourceAsStream("images/03.png")));
-    ImageView ibipolar = new ImageView(
-                new Image(getClass().getResourceAsStream("images/04.png")));
-    ImageView imanchester = new ImageView(
-                new Image(getClass().getResourceAsStream("images/05.png")));
-    ImageView idmanchester = new ImageView(
-                new Image(getClass().getResourceAsStream("images/06.png")));
-
-    private SignalProcessor processor;
-
-    CenterContainer() {
-        super();
-
-        for(int i = 0; i < numberOfBits; i++) {
-            sp[i] = new Spinner(0, 1, 0);
-            sp[i].setPadding(new Insets(5));
-            sp[i].setMaxWidth(55);
-
-            for(int j = 0; j < 6; j++) {
-                qim[j][i] = new SignalQuantumImage(quantumWidth, quantumHeight, quantumColor, quantumThickness, "00");
-            }
-        }
-
-        processor = new SignalProcessor(numberOfBits, qim, prev, sp);
-        updateSignals();
-
-        // ======= LOOK =================
-
-        intro.setFont(Font.font("Helvetica", 20));
-
-        prev.setMaxWidth(65);
-        prev.setPadding(new Insets(5));
-        //prev.setStyle("-fx-background-color: red;");
-        initial.setPadding(new Insets(5));
-
-        nrzl.setPadding(new Insets(10));
-        nrzl.setMinHeight(70);
-
-        nrzpolar.setPadding(new Insets(10));
-        nrzpolar.setMinHeight(70);
-
-        nrzi.setPadding(new Insets(10));
-        nrzi.setMinHeight(70);
-
-        bipolar.setPadding(new Insets(10));
-        bipolar.setMinHeight(70);
-
-        manchester.setPadding(new Insets(10));
-        manchester.setMinHeight(70);
-
-        dmanchester.setPadding(new Insets(10));
-        dmanchester.setMinHeight(70);
-
-        this.setSpacing(10);
-        this.setPadding(new Insets(20));
-        grid.setGridLinesVisible(true);
-
-        // ========= RELATIONS ===============
-        grid.setPadding(new Insets(0));
-        grid.setHgap(0);
-        grid.setVgap(15);
-        grid.add(initial, 0, 0);
-        grid.add(prev, 1, 0);
-
-        grid.add(nrzl, 0, 1);
-        grid.add(nrzpolar, 0, 2);
-        grid.add(nrzi, 0, 3);
-        grid.add(bipolar, 0, 4);
-        grid.add(manchester, 0, 5);
-        grid.add(dmanchester, 0, 6);
-
-        grid.add(inrzl, 1, 1);
-        grid.add(inrzpolar, 1, 2);
-        grid.add(inrzi, 1, 3);
-        grid.add(ibipolar, 1, 4);
-        grid.add(imanchester, 1, 5);
-        grid.add(idmanchester, 1, 6);
-
-        for(int i = 0; i < 16; i++) {
-            grid.add(sp[i], i+2, 0);
-            sp[i].setMaxWidth(quantumWidth-5);
-            for(int j = 0; j < 6; j++) {
-                // grid.add(im[j][i], i+2, j+1);
-                grid.add(qim[j][i], i+2, j+1);
-            }
-        }
-
-        // Add here additional top item
-        this.getChildren().addAll(grid);
-
-        // ======= EVENT HANDLING ==========
-        /*quit.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                Platform.exit();
-                System.exit(0);
-            }
-        }); */
-
-        prev.valueProperty().addListener((obs, oldValue, newValue) -> updateSignals());
-
-        for(int i = 0; i < numberOfBits; i++) {
-            sp[i].valueProperty().addListener((obs, oldValue, newValue) -> updateSignals());
-        }
+public class SignalProcessor {
+    private int numberOfBits;
+    private SignalQuantumImage[][] qim;
+    private Spinner<Integer> prev;
+    private Spinner<Integer>[] sp;
 
 
+    public SignalProcessor(int numberOfBits, SignalQuantumImage[][] qim, Spinner<Integer> prev, Spinner<Integer>[] sp) {
+        this.numberOfBits = numberOfBits;
+        this.qim = qim;
+        this.prev = prev;
+        this.sp = sp;
     }
-/*
-    private void processNRZL()
+
+    public void processNRZL()
     {
         int a, p;
 
@@ -207,7 +65,7 @@ public class CenterContainer extends VBox {
         }
     }
 
-    private void processNRZLPolar()
+    public void processNRZLPolar()
     {
         int a, p;
 
@@ -236,7 +94,7 @@ public class CenterContainer extends VBox {
         }
     }
 
-    private void processNRZI()
+    public void processNRZI()
     {
         int a, p;
 
@@ -265,7 +123,7 @@ public class CenterContainer extends VBox {
         }
     }
 
-    private void processBipolar()
+    public void processBipolar()
     {
         int a, p, pp;
 
@@ -305,7 +163,7 @@ public class CenterContainer extends VBox {
         }
     }
 
-    private void processManchester()
+    public void processManchester()
     {
         int a, p;
 
@@ -334,7 +192,7 @@ public class CenterContainer extends VBox {
         }
     }
 
-    private void processDManchester()
+    public void processDManchester()
     {
         int a, p;
 
@@ -360,19 +218,5 @@ public class CenterContainer extends VBox {
             }
         }
     }
-
-    */
-
-    private void updateSignals()
-    {
-        processor.processNRZL();
-        processor.processNRZLPolar();
-        processor.processNRZI();
-        processor.processBipolar();
-        processor.processManchester();
-        processor.processDManchester();
-    }
-
-
 
 }

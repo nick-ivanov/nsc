@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/nnsignalcoder/SignalProcessor.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/02.png" afterPath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/02.png" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/03.png" afterPath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/03.png" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/04.png" afterPath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/04.png" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/05.png" afterPath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/05.png" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/06.png" afterPath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/06.png" />
+      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/NNSignalCoder.class" afterPath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/NNSignalCoder.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/style.css" afterPath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/style.css" />
       <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/CenterContainer.java" afterPath="$PROJECT_DIR$/src/nnsignalcoder/CenterContainer.java" />
       <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/FittingTest.java" afterPath="$PROJECT_DIR$/src/nnsignalcoder/FittingTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/NNSignalCoder.java" afterPath="$PROJECT_DIR$/src/nnsignalcoder/NNSignalCoder.java" />
+      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/RootContainer.java" afterPath="$PROJECT_DIR$/src/nnsignalcoder/RootContainer.java" />
+      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/SignalQuantumImage.java" afterPath="$PROJECT_DIR$/src/nnsignalcoder/SignalQuantumImage.java" />
+      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/TODO.txt" afterPath="$PROJECT_DIR$/src/nnsignalcoder/TODO.txt" />
       <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/TopContainer.java" afterPath="$PROJECT_DIR$/src/nnsignalcoder/TopContainer.java" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/style.css" afterPath="$PROJECT_DIR$/src/nnsignalcoder/style.css" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,8 +79,8 @@
       <file leaf-file-name="NNSignalCoder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/NNSignalCoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+            <state relative-caret-position="342">
+              <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -88,8 +89,8 @@
       <file leaf-file-name="TopContainer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/TopContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-244">
-              <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+            <state relative-caret-position="342">
+              <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="false" />
               </folding>
@@ -97,11 +98,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="TODO.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/TODO.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CenterContainer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/CenterContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5739">
-              <caret line="336" column="39" lean-forward="false" selection-start-line="336" selection-start-column="39" selection-end-line="336" selection-end-column="39" />
+            <state relative-caret-position="2524">
+              <caret line="167" column="31" lean-forward="true" selection-start-line="167" selection-start-column="31" selection-end-line="167" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignalProcessor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/SignalProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="31">
+              <caret line="193" column="0" lean-forward="true" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -110,8 +131,8 @@
       <file leaf-file-name="SignalQuantumImage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/SignalQuantumImage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="39" column="52" lean-forward="false" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="52" />
+            <state relative-caret-position="151">
+              <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -130,34 +151,20 @@
       <file leaf-file-name="FittingTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/FittingTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="342">
+              <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="01-old.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/images/01-old.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="RootContainer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/RootContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="38" column="41" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+            <state relative-caret-position="342">
+              <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="01.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/images/01.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -173,8 +180,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JavaFXApplication" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -182,6 +189,7 @@
     <findStrings>
       <find>intro</find>
       <find>qim</find>
+      <find>quit</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -207,16 +215,17 @@
       <list>
         <option value="$PROJECT_DIR$/src/nnsignalcoder/Main.java" />
         <option value="$PROJECT_DIR$/src/nnsignalcoder/License.txt" />
-        <option value="$PROJECT_DIR$/src/nnsignalcoder/TODO.txt" />
         <option value="$PROJECT_DIR$/CHANGELOG.txt" />
-        <option value="$PROJECT_DIR$/src/nnsignalcoder/SignalQuantumImage.java" />
         <option value="$PROJECT_DIR$/README.txt" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/nnsignalcoder/style.css" />
+        <option value="$PROJECT_DIR$/src/nnsignalcoder/TODO.txt" />
+        <option value="$PROJECT_DIR$/src/nnsignalcoder/FittingTest.java" />
         <option value="$PROJECT_DIR$/src/nnsignalcoder/NNSignalCoder.java" />
         <option value="$PROJECT_DIR$/src/nnsignalcoder/RootContainer.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/nnsignalcoder/FittingTest.java" />
-        <option value="$PROJECT_DIR$/src/nnsignalcoder/style.css" />
+        <option value="$PROJECT_DIR$/src/nnsignalcoder/SignalQuantumImage.java" />
         <option value="$PROJECT_DIR$/src/nnsignalcoder/TopContainer.java" />
+        <option value="$PROJECT_DIR$/src/nnsignalcoder/SignalProcessor.java" />
         <option value="$PROJECT_DIR$/src/nnsignalcoder/CenterContainer.java" />
       </list>
     </option>
@@ -810,7 +819,7 @@
       <workItem from="1469942963628" duration="6431000" />
       <workItem from="1470692197578" duration="140000" />
       <workItem from="1470692491104" duration="701000" />
-      <workItem from="1515122423321" duration="3778000" />
+      <workItem from="1515122423321" duration="6216000" />
     </task>
     <task id="LOCAL-00001" summary="Added License.txt">
       <created>1469223902046</created>
@@ -889,11 +898,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515125097010</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Minor improvements">
+      <created>1515126425374</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1515126425374</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48141000" />
+    <option name="totallyTimeSpent" value="50579000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="841" extended-state="0" />
@@ -955,9 +971,9 @@
     <MESSAGE value="Implemented SignalQuantumImage&#10;Minor fixes" />
     <MESSAGE value="Switched to self-drawing from the pre-defined images&#10;Introduced scrolling&#10;Code cleanups&#10;Many minor improvements" />
     <MESSAGE value="Version 0.2&#10;* Switched from static images to canvas drawing&#10;* Performance and design improvements" />
-    <MESSAGE value="Minor improvements" />
     <MESSAGE value="Nice polarity images and Edit menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nice polarity images and Edit menu" />
+    <MESSAGE value="Minor improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor improvements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -973,14 +989,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/FittingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/SignalQuantumImage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1158,14 +1166,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/TODO.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -1227,10 +1227,34 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/TODO.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/FittingTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="342">
+          <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/NNSignalCoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/RootContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -1243,44 +1267,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/SignalQuantumImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="39" column="52" lean-forward="false" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/RootContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="38" column="41" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/NNSignalCoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/TopContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-244">
-          <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+        <state relative-caret-position="342">
+          <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/SignalQuantumImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/SignalProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="193" column="0" lean-forward="true" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/CenterContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5739">
-          <caret line="336" column="39" lean-forward="false" selection-start-line="336" selection-start-column="39" selection-end-line="336" selection-end-column="39" />
+        <state relative-caret-position="2524">
+          <caret line="167" column="31" lean-forward="true" selection-start-line="167" selection-start-column="31" selection-end-line="167" selection-end-column="31" />
           <folding />
         </state>
       </provider>

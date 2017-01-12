@@ -1,10 +1,3 @@
-TO BE DONE
-[feel free working on the items from this list; move your name into IS BEING DONE list]
+* Use CSS for visual properties
+* Make signal lines nice
 
-* Use CSS
-
-IS BEING DONE:
-[contact the person working on it if you want to contribute;
-if you are working on something, move it here and leave your name]
-
-* Substitute file images into Canvas images [Nick Ivanov]
