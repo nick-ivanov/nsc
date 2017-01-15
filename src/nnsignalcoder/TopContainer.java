@@ -31,57 +31,55 @@ import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
 
 public class TopContainer extends MenuBar {
-    final Menu menu1 = new Menu("File");
-    final Menu menu2 = new Menu("Edit");
-    final Menu menu3 = new Menu("View");
-    final Menu menu4 = new Menu("Help");
+    final Menu fileMenu = new Menu("File");
+    final Menu editMenu = new Menu("Edit");
+    final Menu viewMenu = new Menu("View");
+    final Menu helpMenu = new Menu("Help");
 
-    final MenuItem quit_item = new MenuItem("Quit");
-    final MenuItem manual_item = new MenuItem("Documentation");
-    final MenuItem about_item = new MenuItem("About");
+    final MenuItem quitMenuItem = new MenuItem("Quit");
+    final MenuItem manualMenuItem = new MenuItem("Documentation");
+    final MenuItem aboutMenuItem = new MenuItem("About");
 
     public TopContainer(Stage stage) {
-        menu1.getItems().add(quit_item);
-        menu4.getItems().addAll(manual_item, about_item);
-        this.getMenus().addAll(menu1, menu2, menu3, menu4);
+        fileMenu.getItems().add(quitMenuItem);
+        helpMenu.getItems().addAll(manualMenuItem, aboutMenuItem);
+        this.getMenus().addAll(fileMenu, editMenu, viewMenu, helpMenu);
 
         setEvents(stage);
     }
 
     private void setEvents(Stage stage) {
         EventHandler<ActionEvent> MEHandler =
-                new EventHandler<ActionEvent>() {
-                    public void handle(ActionEvent ae) {
-                        String name = ((MenuItem)ae.getTarget()).getText();
+                ae -> {
+                    String name = ((MenuItem)ae.getTarget()).getText();
 
-                        if(name.equals("Quit")) { Platform.exit(); }
+                    if(name.equals("Quit")) { Platform.exit(); }
 
-                        if(name.equals("Documentation")) {
-                            Alert alert = new Alert(AlertType.INFORMATION);
-                            alert.setTitle("IP46 Help");
-                            alert.setHeaderText("How to use Network Signal Coder");
-                            String content = "This program is designed with an idea that software should " +
-                                    "be intuitively simple. If you cannot use this program without documentation, " +
-                                    "throw this program out and let us know that we screwed things up.";
-                            alert.setContentText(content);
-                            alert.showAndWait();
-                        }
+                    if(name.equals("Documentation")) {
+                        Alert alert = new Alert(AlertType.INFORMATION);
+                        alert.setTitle("IP46 Help");
+                        alert.setHeaderText("How to use Network Signal Coder");
+                        String content = "This program is designed with an idea that software should " +
+                                "be intuitively simple. If you cannot use this program without documentation, " +
+                                "throw this program out and let us know that we screwed things up.";
+                        alert.setContentText(content);
+                        alert.showAndWait();
+                    }
 
-                        if(name.equals("About")) {
-                            Alert alert = new Alert(AlertType.INFORMATION);
-                            alert.setTitle("About Network Signal Coder");
-                            alert.setHeaderText("About Network Signal Coder");
-                            String content = "Copyright (C) 2016-2017 Nick Ivanov (nnrowan@gmail.com)\n\n" +
-                                    "Distributed under GNU GPL v.3";
-                            alert.setContentText(content);
-                            alert.showAndWait();
-                        }
+                    if(name.equals("About")) {
+                        Alert alert = new Alert(AlertType.INFORMATION);
+                        alert.setTitle("About Network Signal Coder");
+                        alert.setHeaderText("About Network Signal Coder");
+                        String content = "Copyright (C) 2016-2017 Nick Ivanov (nnrowan@gmail.com)\n\n" +
+                                "Distributed under GNU GPL v.3";
+                        alert.setContentText(content);
+                        alert.showAndWait();
                     }
                 };
 
-        quit_item.setOnAction(MEHandler);
-        manual_item.setOnAction(MEHandler);
-        about_item.setOnAction(MEHandler);
+        quitMenuItem.setOnAction(MEHandler);
+        manualMenuItem.setOnAction(MEHandler);
+        aboutMenuItem.setOnAction(MEHandler);
     }
 
 }

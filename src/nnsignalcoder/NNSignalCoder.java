@@ -37,6 +37,7 @@ public class NNSignalCoder extends Application {
     }
 
     public static void main(String[] args) {
+        System.out.println(NSCPropertyHelper.getProperty("application_name"));
         launch(args);
     }
 }

@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/nnsignalcoder/SignalProcessor.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/nnsignalcoder/NSCPropertyHelper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/nnsignalcoder/application.properties" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/NNSignalCoder.class" afterPath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/NNSignalCoder.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/style.css" afterPath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/style.css" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/CenterContainer.java" afterPath="$PROJECT_DIR$/src/nnsignalcoder/CenterContainer.java" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/FittingTest.java" afterPath="$PROJECT_DIR$/src/nnsignalcoder/FittingTest.java" />
       <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/NNSignalCoder.java" afterPath="$PROJECT_DIR$/src/nnsignalcoder/NNSignalCoder.java" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/RootContainer.java" afterPath="$PROJECT_DIR$/src/nnsignalcoder/RootContainer.java" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/SignalQuantumImage.java" afterPath="$PROJECT_DIR$/src/nnsignalcoder/SignalQuantumImage.java" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/TODO.txt" afterPath="$PROJECT_DIR$/src/nnsignalcoder/TODO.txt" />
       <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/TopContainer.java" afterPath="$PROJECT_DIR$/src/nnsignalcoder/TopContainer.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -76,11 +71,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NNSignalCoder.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NNSignalCoder.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/NNSignalCoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+            <state relative-caret-position="440">
+              <caret line="39" column="78" lean-forward="false" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -89,8 +84,8 @@
       <file leaf-file-name="TopContainer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/TopContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+            <state relative-caret-position="721">
+              <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="false" />
               </folding>
@@ -98,21 +93,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TODO.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/TODO.txt">
+      <file leaf-file-name="NSCPropertyHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/NSCPropertyHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+            <state relative-caret-position="133">
+              <caret line="7" column="74" lean-forward="false" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="74" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CenterContainer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CenterContainer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/CenterContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2524">
-              <caret line="167" column="31" lean-forward="true" selection-start-line="167" selection-start-column="31" selection-end-line="167" selection-end-column="31" />
+            <state relative-caret-position="218">
+              <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -168,13 +173,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="02.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/images/02.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -221,12 +219,14 @@
         <option value="$PROJECT_DIR$/src/nnsignalcoder/style.css" />
         <option value="$PROJECT_DIR$/src/nnsignalcoder/TODO.txt" />
         <option value="$PROJECT_DIR$/src/nnsignalcoder/FittingTest.java" />
-        <option value="$PROJECT_DIR$/src/nnsignalcoder/NNSignalCoder.java" />
         <option value="$PROJECT_DIR$/src/nnsignalcoder/RootContainer.java" />
         <option value="$PROJECT_DIR$/src/nnsignalcoder/SignalQuantumImage.java" />
-        <option value="$PROJECT_DIR$/src/nnsignalcoder/TopContainer.java" />
         <option value="$PROJECT_DIR$/src/nnsignalcoder/SignalProcessor.java" />
         <option value="$PROJECT_DIR$/src/nnsignalcoder/CenterContainer.java" />
+        <option value="$PROJECT_DIR$/src/nnsignalcoder/TopContainer.java" />
+        <option value="$PROJECT_DIR$/src/nnsignalcoder/NSCPropertyHelper.java" />
+        <option value="$PROJECT_DIR$/src/nnsignalcoder/application.properties" />
+        <option value="$PROJECT_DIR$/src/nnsignalcoder/NNSignalCoder.java" />
       </list>
     </option>
   </component>
@@ -819,7 +819,7 @@
       <workItem from="1469942963628" duration="6431000" />
       <workItem from="1470692197578" duration="140000" />
       <workItem from="1470692491104" duration="701000" />
-      <workItem from="1515122423321" duration="6216000" />
+      <workItem from="1515122423321" duration="6937000" />
     </task>
     <task id="LOCAL-00001" summary="Added License.txt">
       <created>1469223902046</created>
@@ -905,15 +905,21 @@
       <option name="project" value="LOCAL" />
       <updated>1515126425374</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Refactoring and minor improvements">
+      <created>1515196043009</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1515196043009</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50579000" />
+    <option name="totallyTimeSpent" value="51300000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="841" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -923,12 +929,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35828876" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12433155" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20958512" sideWeight="0.6703755" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20958512" sideWeight="0.6703755" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988167" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -973,7 +979,8 @@
     <MESSAGE value="Version 0.2&#10;* Switched from static images to canvas drawing&#10;* Performance and design improvements" />
     <MESSAGE value="Nice polarity images and Edit menu" />
     <MESSAGE value="Minor improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor improvements" />
+    <MESSAGE value="Refactoring and minor improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring and minor improvements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -989,22 +996,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/SignalQuantumImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/RootContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="38" column="39" lean-forward="false" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/NNSignalCoder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1243,14 +1234,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/NNSignalCoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/RootContainer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -1264,16 +1247,6 @@
         <state relative-caret-position="57">
           <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/TopContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1295,8 +1268,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/CenterContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2524">
-          <caret line="167" column="31" lean-forward="true" selection-start-line="167" selection-start-column="31" selection-end-line="167" selection-end-column="31" />
+        <state relative-caret-position="218">
+          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/TopContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="721">
+          <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/NSCPropertyHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="74" lean-forward="false" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nnsignalcoder/NNSignalCoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="39" column="78" lean-forward="false" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
           <folding />
         </state>
       </provider>
