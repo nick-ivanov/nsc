@@ -43,7 +43,7 @@ public class CenterContainer extends VBox {
 
     private GridPane grid = new GridPane();
     //private Button quit = new Button("Quit");
-    private Label intro = new Label("Welcome to NNSignalCoder!");
+    private Label intro = new Label("Welcome to NSC!");
     private Label initial = new Label("BITS:");
     private Spinner[] sp = new Spinner[16];
     private Spinner prev = new Spinner(0, 1, 0);

@@ -24,13 +24,17 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class NNSignalCoder extends Application {
+public class NSC extends Application {
     RootContainer rootContainer;
     Scene scene;
+
     @Override
     public void start(Stage primaryStage) {
+        int defaultWidth = Integer.parseInt(NSCPropertyHelper.getProperty("default_width").trim());
+        int defaultHeight = Integer.parseInt(NSCPropertyHelper.getProperty("default_height").trim());
+
         rootContainer = new RootContainer(primaryStage);
-        scene = new Scene(rootContainer, 1280, 640);
+        scene = new Scene(rootContainer, defaultWidth, defaultHeight);
         primaryStage.setTitle("Network Signal Coder");
         primaryStage.setScene(scene);
         primaryStage.show();

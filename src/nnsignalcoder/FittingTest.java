@@ -52,7 +52,7 @@ public class FittingTest extends Application {
         drawImages();
 
         Scene scene = new Scene(grid, 1280, 640);
-        primaryStage.setTitle("NNSignalCoder Fitting Test");
+        primaryStage.setTitle("NSC Fitting Test");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
