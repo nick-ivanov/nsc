@@ -18,7 +18,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-package nnsignalcoder;
+package nsc;
 
 import javafx.geometry.Insets;
 import javafx.scene.canvas.Canvas;

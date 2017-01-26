@@ -18,30 +18,49 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-package nnsignalcoder;
+package nsc;
 
 import javafx.application.Application;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-public class NSC extends Application {
-    RootContainer rootContainer;
-    Scene scene;
+import static javafx.scene.paint.Color.*;
+
+public class FittingTest extends Application {
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+
+    HBox grid;
+    SignalQuantumImage image1 = new SignalQuantumImage(55, 55, BLUE, 3, "345");
+    SignalQuantumImage image2 = new SignalQuantumImage(55, 55, RED, 5, "1473");
 
     @Override
     public void start(Stage primaryStage) {
-        int defaultWidth = Integer.parseInt(NSCPropertyHelper.getProperty("default_width").trim());
-        int defaultHeight = Integer.parseInt(NSCPropertyHelper.getProperty("default_height").trim());
+        grid = new HBox();
+        grid.setPadding(new Insets(0));
+        grid.getChildren().addAll(image1, image2);
 
-        rootContainer = new RootContainer(primaryStage);
-        scene = new Scene(rootContainer, defaultWidth, defaultHeight);
-        primaryStage.setTitle("Network Signal Coder");
+
+        drawImages();
+
+        Scene scene = new Scene(grid, 1280, 640);
+        primaryStage.setTitle("NSC Fitting Test");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
 
-    public static void main(String[] args) {
-        System.out.println(NSCPropertyHelper.getProperty("application_name"));
-        launch(args);
+    private void drawImages() {
+        image1.drawQuantum();
+        image2.drawQuantum();
+        image2.setCode("39745");
+        image2.drawQuantum();
     }
 }

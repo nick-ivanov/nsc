@@ -18,7 +18,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-package nnsignalcoder;
+package nsc;
 
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -57,7 +57,7 @@ public class TopContainer extends MenuBar {
 
                     if(name.equals("Documentation")) {
                         Alert alert = new Alert(AlertType.INFORMATION);
-                        alert.setTitle("IP46 Help");
+                        alert.setTitle("Network Signal Coder Help");
                         alert.setHeaderText("How to use Network Signal Coder");
                         String content = "This program is designed with an idea that software should " +
                                 "be intuitively simple. If you cannot use this program without documentation, " +
@@ -70,7 +70,7 @@ public class TopContainer extends MenuBar {
                         Alert alert = new Alert(AlertType.INFORMATION);
                         alert.setTitle("About Network Signal Coder");
                         alert.setHeaderText("About Network Signal Coder");
-                        String content = "Copyright (C) 2016-2017 Nick Ivanov (nnrowan@gmail.com)\n\n" +
+                        String content = "Copyright (C) 2015-2017 Nick Ivanov (nnrowan@gmail.com)\n\n" +
                                 "Distributed under GNU GPL v.3";
                         alert.setContentText(content);
                         alert.showAndWait();

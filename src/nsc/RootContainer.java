@@ -18,7 +18,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-package nnsignalcoder;
+package nsc;
 
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.BorderPane;

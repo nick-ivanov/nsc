@@ -18,7 +18,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-package nnsignalcoder;
+package nsc;
 
 import javafx.scene.control.Spinner;
 
@@ -27,7 +27,6 @@ public class SignalProcessor {
     private SignalQuantumImage[][] qim;
     private Spinner<Integer> prev;
     private Spinner<Integer>[] sp;
-
 
     public SignalProcessor(int numberOfBits, SignalQuantumImage[][] qim, Spinner<Integer> prev, Spinner<Integer>[] sp) {
         this.numberOfBits = numberOfBits;
@@ -40,18 +39,10 @@ public class SignalProcessor {
     {
         int a, p;
 
-        p = (int) prev.getValue();
+        p = prev.getValue();
 
         for(int i = 0; i < numberOfBits; i++) {
-            a = (int) sp[i].getValue();
-
-//            if(a == 0) {
-//                if(p == 0) { im[0][i].setImage(new Image(getClass().getResourceAsStream("images/s02.png"))); }
-//                else { im[0][i].setImage(new Image(getClass().getResourceAsStream("images/s03.png"))); }
-//            } else {
-//                if(p == 0) { im[0][i].setImage(new Image(getClass().getResourceAsStream("images/s04.png"))); }
-//                else { im[0][i].setImage(new Image(getClass().getResourceAsStream("images/s01.png"))); }
-//            }
+            a = sp[i].getValue();
 
             if(a == 0) {
                 if(p == 0) { qim[0][i].drawQuantum("79"); }
@@ -61,7 +52,7 @@ public class SignalProcessor {
                 else { qim[0][i].drawQuantum("13"); }
             }
 
-            p = (int) sp[i].getValue();
+            p = sp[i].getValue();
         }
     }
 
@@ -69,18 +60,10 @@ public class SignalProcessor {
     {
         int a, p;
 
-        p = (int) prev.getValue();
+        p = prev.getValue();
 
         for(int i = 0; i < numberOfBits; i++) {
-            a = (int) sp[i].getValue();
-
-//            if(a == 0) {
-//                if(p == 0) { im[1][i].setImage(new Image(getClass().getResourceAsStream("images/s02.png"))); }
-//                else { im[1][i].setImage(new Image(getClass().getResourceAsStream("images/s03.png"))); }
-//            } else {
-//                if(p == 0) { im[1][i].setImage(new Image(getClass().getResourceAsStream("images/s04.png"))); }
-//                else { im[1][i].setImage(new Image(getClass().getResourceAsStream("images/s01.png"))); }
-//            }
+            a = sp[i].getValue();
 
             if(a == 0) {
                 if(p == 0) { qim[1][i].drawQuantum("79"); }
@@ -90,7 +73,7 @@ public class SignalProcessor {
                 else { qim[1][i].drawQuantum("13"); }
             }
 
-            p = (int) sp[i].getValue();
+            p = sp[i].getValue();
         }
     }
 
@@ -98,18 +81,10 @@ public class SignalProcessor {
     {
         int a, p;
 
-        p = (int) prev.getValue();
+        p = prev.getValue();
 
         for(int i = 0; i < numberOfBits; i++) {
-            a = (int) sp[i].getValue();
-
-//            if(a == 1) {
-//                if(p == 1) { im[2][i].setImage(new Image(getClass().getResourceAsStream("images/s03.png"))); p = 0; }
-//                else { im[2][i].setImage(new Image(getClass().getResourceAsStream("images/s04.png"))); p = 1; }
-//            } else {
-//                if(p == 1) { im[2][i].setImage(new Image(getClass().getResourceAsStream("images/s01.png"))); p = 1; }
-//                else { im[2][i].setImage(new Image(getClass().getResourceAsStream("images/s02.png"))); p = 0; }
-//            }
+            a = sp[i].getValue();
 
             if(a == 1) {
                 if(p == 1) { qim[2][i].drawQuantum("179"); p = 0; }
@@ -127,25 +102,11 @@ public class SignalProcessor {
     {
         int a, p, pp;
 
-        p = (int) prev.getValue();
+        p = prev.getValue();
         pp = -1;
 
         for(int i = 0; i < numberOfBits; i++) {
-            a = (int) sp[i].getValue();
-
-//            if(a == 0) {
-//                if(p == 1) { im[3][i].setImage(new Image(getClass().getResourceAsStream("images/s06.png"))); p = 0; }
-//                else if(p == -1) { im[3][i].setImage(new Image(getClass().getResourceAsStream("images/s08.png"))); p = 0; }
-//                else { im[3][i].setImage(new Image(getClass().getResourceAsStream("images/s05.png"))); p = 0; }
-//            } else { // a == 1
-//                if(pp == -1) {
-//                    if(p == 0) { im[3][i].setImage(new Image(getClass().getResourceAsStream("images/s09.png"))); p = 1; pp = 1; }
-//                    else { im[3][i].setImage(new Image(getClass().getResourceAsStream("images/s04.png"))); p = 1; pp = 1; }
-//                } else {
-//                    if(p == 0) { im[3][i].setImage(new Image(getClass().getResourceAsStream("images/s07.png"))); p = -1; pp = -1; }
-//                    else { im[3][i].setImage(new Image(getClass().getResourceAsStream("images/s03.png"))); p = -1; pp = -1; }
-//                }
-//            }
+            a = sp[i].getValue();
 
             if(a == 0) {
                 if(p == 1) { qim[3][i].drawQuantum("146"); p = 0; }
@@ -167,18 +128,10 @@ public class SignalProcessor {
     {
         int a, p;
 
-        p = (int) prev.getValue();
+        p = prev.getValue();
 
         for(int i = 0; i < numberOfBits; i++) {
-            a = (int) sp[i].getValue();
-
-//            if(a == 0) {
-//                if(p == 1) { qim[4][i].setImage(new Image(getClass().getResourceAsStream("images/s10.png"))); }
-//                else { qim[4][i].setImage(new Image(getClass().getResourceAsStream("images/s11.png"))); }
-//            } else {
-//                if(p == 1) { qim[4][i].setImage(new Image(getClass().getResourceAsStream("images/s13.png"))); }
-//                else { qim[4][i].setImage(new Image(getClass().getResourceAsStream("images/s12.png"))); }
-//            }
+            a = sp[i].getValue();
 
             if(a == 0) {
                 if(p == 1) { qim[4][i].drawQuantum("1289"); }
@@ -188,7 +141,7 @@ public class SignalProcessor {
                 else { qim[4][i].drawQuantum("7823"); }
             }
 
-            p = (int) sp[i].getValue();
+            p = sp[i].getValue();
         }
     }
 
@@ -196,18 +149,10 @@ public class SignalProcessor {
     {
         int a, p;
 
-        p = (int) prev.getValue();
+        p = prev.getValue();
 
         for(int i = 0; i < numberOfBits; i++) {
-            a = (int) sp[i].getValue();
-
-//            if(a == 0) {
-//                if(p == 1) { im[5][i].setImage(new Image(getClass().getResourceAsStream("images/s13.png"))); p = 1; }
-//                else { im[5][i].setImage(new Image(getClass().getResourceAsStream("images/s11.png"))); p = 0; }
-//            } else {
-//                if(p == 1) { im[5][i].setImage(new Image(getClass().getResourceAsStream("images/s10.png"))); p = 0; }
-//                else { im[5][i].setImage(new Image(getClass().getResourceAsStream("images/s12.png"))); p = 1; }
-//            }
+            a = sp[i].getValue();
 
             if(a == 0) {
                 if(p == 1) { qim[5][i].drawQuantum("17823"); p = 1; }

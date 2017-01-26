@@ -1,11 +1,11 @@
-package nnsignalcoder;
+package nsc;
 
 import java.util.*;
 import java.io.*;
 import java.util.Map.Entry;
 
 public class NSCPropertyHelper {
-    final static String PROPERTY_FILEPATH = "src/nnsignalcoder/application.properties";
+    final static String PROPERTY_FILEPATH = "src/nsc/application.properties";
 
     static String getProperty(String property) {
         try {
