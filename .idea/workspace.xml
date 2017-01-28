@@ -3,61 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.txt" afterPath="$PROJECT_DIR$/README.txt" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/01.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/02.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/03.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/04.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/05.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/06.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/dummy.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/s01.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/s02.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/s03.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/s04.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/s05.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/s06.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/s07.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/s08.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/s09.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/s10.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/s11.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/s12.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/images/s13.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/NNSignalCoder/nnsignalcoder/style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/CenterContainer.java" afterPath="$PROJECT_DIR$/src/nsc/CenterContainer.java" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/FittingTest.java" afterPath="$PROJECT_DIR$/src/nsc/FittingTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/License.txt" afterPath="$PROJECT_DIR$/src/nsc/License.txt" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/NSC.java" afterPath="$PROJECT_DIR$/src/nsc/NSC.java" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/NSCPropertyHelper.java" afterPath="$PROJECT_DIR$/src/nsc/NSCPropertyHelper.java" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/RootContainer.java" afterPath="$PROJECT_DIR$/src/nsc/RootContainer.java" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/SignalProcessor.java" afterPath="$PROJECT_DIR$/src/nsc/SignalProcessor.java" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/SignalQuantumImage.java" afterPath="$PROJECT_DIR$/src/nsc/SignalQuantumImage.java" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/TODO.txt" afterPath="$PROJECT_DIR$/src/nsc/TODO.txt" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/TopContainer.java" afterPath="$PROJECT_DIR$/src/nsc/TopContainer.java" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/application.properties" afterPath="$PROJECT_DIR$/src/nsc/application.properties" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/images/01-old.png" afterPath="$PROJECT_DIR$/src/nsc/images/01-old.png" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/images/01.png" afterPath="$PROJECT_DIR$/src/nsc/images/01.png" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/images/02.png" afterPath="$PROJECT_DIR$/src/nsc/images/02.png" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/images/03.png" afterPath="$PROJECT_DIR$/src/nsc/images/03.png" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/images/04.png" afterPath="$PROJECT_DIR$/src/nsc/images/04.png" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/images/05.png" afterPath="$PROJECT_DIR$/src/nsc/images/05.png" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/images/06.png" afterPath="$PROJECT_DIR$/src/nsc/images/06.png" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/images/dummy.png" afterPath="$PROJECT_DIR$/src/nsc/images/dummy.png" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/images/s01.png" afterPath="$PROJECT_DIR$/src/nsc/images/s01.png" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/images/s02.png" afterPath="$PROJECT_DIR$/src/nsc/images/s02.png" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/images/s03.png" afterPath="$PROJECT_DIR$/src/nsc/images/s03.png" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/images/s04.png" afterPath="$PROJECT_DIR$/src/nsc/images/s04.png" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/images/s05.png" afterPath="$PROJECT_DIR$/src/nsc/images/s05.png" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/images/s06.png" afterPath="$PROJECT_DIR$/src/nsc/images/s06.png" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/images/s07.png" afterPath="$PROJECT_DIR$/src/nsc/images/s07.png" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/images/s08.png" afterPath="$PROJECT_DIR$/src/nsc/images/s08.png" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/images/s09.png" afterPath="$PROJECT_DIR$/src/nsc/images/s09.png" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/images/s10.png" afterPath="$PROJECT_DIR$/src/nsc/images/s10.png" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/images/s11.png" afterPath="$PROJECT_DIR$/src/nsc/images/s11.png" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/images/s12.png" afterPath="$PROJECT_DIR$/src/nsc/images/s12.png" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/images/s13.png" afterPath="$PROJECT_DIR$/src/nsc/images/s13.png" />
-      <change beforePath="$PROJECT_DIR$/src/nnsignalcoder/style.css" afterPath="$PROJECT_DIR$/src/nsc/style.css" />
+      <change beforePath="$PROJECT_DIR$/src/nsc/CenterContainer.java" afterPath="$PROJECT_DIR$/src/nsc/CenterContainer.java" />
+      <change beforePath="$PROJECT_DIR$/src/nsc/application.properties" afterPath="$PROJECT_DIR$/src/nsc/application.properties" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -131,21 +78,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CenterContainer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CenterContainer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nsc/CenterContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1004">
-              <caret line="84" column="41" lean-forward="false" selection-start-line="84" selection-start-column="41" selection-end-line="84" selection-end-column="41" />
+            <state relative-caret-position="412">
+              <caret line="51" column="94" lean-forward="true" selection-start-line="51" selection-start-column="94" selection-end-line="51" selection-end-column="94" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/nsc/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            <state relative-caret-position="133">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -280,6 +227,7 @@
         <option value="$PROJECT_DIR$/src/nsc/TopContainer.java" />
         <option value="$PROJECT_DIR$/src/nsc/SignalProcessor.java" />
         <option value="$PROJECT_DIR$/src/nsc/CenterContainer.java" />
+        <option value="$PROJECT_DIR$/src/nsc/application.properties" />
       </list>
     </option>
   </component>
@@ -872,7 +820,7 @@
       <workItem from="1469942963628" duration="6431000" />
       <workItem from="1470692197578" duration="140000" />
       <workItem from="1470692491104" duration="701000" />
-      <workItem from="1515122423321" duration="8823000" />
+      <workItem from="1515122423321" duration="10111000" />
     </task>
     <task id="LOCAL-00001" summary="Added License.txt">
       <created>1469223902046</created>
@@ -979,11 +927,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515197521042</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Code refactoring">
+      <created>1515199028621</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1515199028621</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53186000" />
+    <option name="totallyTimeSpent" value="54474000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="841" extended-state="0" />
@@ -1050,7 +1005,8 @@
     <MESSAGE value="Refactoring and minor improvements" />
     <MESSAGE value="Property manager added" />
     <MESSAGE value="default_width and default_height properties added" />
-    <option name="LAST_COMMIT_MESSAGE" value="default_width and default_height properties added" />
+    <MESSAGE value="Code refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1296,14 +1252,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nsc/TopContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="72" column="60" lean-forward="false" selection-start-line="72" selection-start-column="60" selection-end-line="72" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nsc/TODO.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -1344,14 +1292,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nsc/NSCPropertyHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nsc/NSC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
@@ -1360,18 +1300,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nsc/application.properties">
+    <entry file="file://$PROJECT_DIR$/src/nsc/NSCPropertyHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        <state relative-caret-position="323">
+          <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nsc/TopContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="72" column="60" lean-forward="false" selection-start-line="72" selection-start-column="60" selection-end-line="72" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nsc/CenterContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1004">
-          <caret line="84" column="41" lean-forward="false" selection-start-line="84" selection-start-column="41" selection-end-line="84" selection-end-column="41" />
+        <state relative-caret-position="412">
+          <caret line="51" column="94" lean-forward="true" selection-start-line="51" selection-start-column="94" selection-end-line="51" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nsc/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>

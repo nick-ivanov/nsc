@@ -44,12 +44,12 @@ public class CenterContainer extends VBox {
 
     private SignalQuantumImage[][] qim = new SignalQuantumImage[6][16];
 
-    private Label nrzl = new Label("NRZ-L");
-    private Label nrzpolar = new Label("Polar NRZ-L");
-    private Label nrzi = new Label("NRZ-I");
-    private Label bipolar = new Label("Bipolar-AMI");
-    private Label manchester = new Label("Manchester");
-    private Label dmanchester = new Label("Diff. Manchester");
+    private Label nrzl = new Label(NSCPropertyHelper.getProperty("nrz_l_label"));
+    private Label nrzpolar = new Label(NSCPropertyHelper.getProperty("polar_nrz_l_label"));
+    private Label nrzi = new Label(NSCPropertyHelper.getProperty("nrz_i_label"));
+    private Label bipolar = new Label(NSCPropertyHelper.getProperty("bipolar_ami_label"));
+    private Label manchester = new Label(NSCPropertyHelper.getProperty("manchester_label"));
+    private Label dmanchester = new Label(NSCPropertyHelper.getProperty("dmanchester_label"));
 
     ImageView inrzl = new ImageView(
                 new Image(getClass().getResourceAsStream("images/01.png")));
