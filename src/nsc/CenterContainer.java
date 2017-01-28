@@ -27,7 +27,6 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
-import javafx.scene.text.Font;
 import javafx.scene.paint.Color;
 
 public class CenterContainer extends VBox {
@@ -38,11 +37,11 @@ public class CenterContainer extends VBox {
     private final int numberOfBits = 16;
 
     private GridPane grid = new GridPane();
-    private Label initial = new Label("BITS:");
-    private Spinner[] sp = new Spinner[16];
+    private Label initial = new Label(NSCPropertyHelper.getProperty("bits_label"));
+    private Spinner[] sp = new Spinner[numberOfBits];
     private Spinner prev = new Spinner(0, 1, 0);
 
-    private SignalQuantumImage[][] qim = new SignalQuantumImage[6][16];
+    private SignalQuantumImage[][] qim = new SignalQuantumImage[6][numberOfBits];
 
     private Label nrzl = new Label(NSCPropertyHelper.getProperty("nrz_l_label"));
     private Label nrzpolar = new Label(NSCPropertyHelper.getProperty("polar_nrz_l_label"));
