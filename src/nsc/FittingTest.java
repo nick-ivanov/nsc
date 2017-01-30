@@ -52,7 +52,7 @@ public class FittingTest extends Application {
         drawImages();
 
         Scene scene = new Scene(grid, 1280, 640);
-        primaryStage.setTitle("NSC Fitting Test");
+        primaryStage.setTitle(NSCPropertyHelper.getProperty("default_window_title"));
         primaryStage.setScene(scene);
         primaryStage.show();
     }

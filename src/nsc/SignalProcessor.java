@@ -100,6 +100,7 @@ public class SignalProcessor {
 
     public void processBipolar()
     {
+        System.out.println("Bipolar AMI");
         int a, p, pp;
 
         p = prev.getValue();
@@ -122,6 +123,9 @@ public class SignalProcessor {
                 }
             }
         }
+
+        System.out.println("END OF Bipolar AMI");
+
     }
 
     public void processManchester()

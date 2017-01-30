@@ -68,6 +68,8 @@ public class SignalQuantumImage extends Canvas {
             c1 = code.charAt(i-1);
             c2 = code.charAt(i);
 
+            System.out.println("c1: " + c1 + ", c2: " + c2);
+
             // TODO: Needs to consider thickness
             switch(c1) {
                 case '1': x1 = 0; y1 = 0; break;
@@ -96,7 +98,12 @@ public class SignalQuantumImage extends Canvas {
             }
 
             graphicsContext.strokeLine(x1, y1, x2, y2);
+            System.out.println("x1: " + x1 + ", y1: " + y1 + ", x2: " + x2 + ", y2: " + y2);
         }
+
+        System.out.println("---");
+
+
     }
 
     public void drawQuantum(String code) {
