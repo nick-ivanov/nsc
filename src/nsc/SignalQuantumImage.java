@@ -97,6 +97,48 @@ public class SignalQuantumImage extends Canvas {
                 default: x2 = 0; y2 = 0; break;
             }
 
+            if((c1 == '1' && c2 == '2') || (c2 == '1' && c1 == '2')) {
+                System.out.println("here: " + thickness/2.0);
+                y1 += (thickness/2.0);
+                y2 += (thickness/2.0);
+            }
+
+
+            if((c1 == '1' && c2 == '3') || (c2 == '1' && c1 == '3')) {
+                System.out.println("here: " + thickness/2.0);
+                y1 += (thickness/2.0);
+                y2 += (thickness/2.0);
+            }
+
+            if((c1 == '2' && c2 == '3') || (c2 == '2' && c1 == '3')) {
+                System.out.println("here: " + thickness/2.0);
+                y1 += (thickness/2.0);
+                y2 += (thickness/2.0);
+            }
+
+
+            if((c1 == '7' && c2 == '8') || (c2 == '7' && c1 == '8')) {
+                System.out.println("here: " + thickness/2.0);
+                y1 -= (thickness/2.0);
+                y2 -= (thickness/2.0);
+            }
+
+
+            if((c1 == '7' && c2 == '9') || (c2 == '7' && c1 == '9')) {
+                System.out.println("here: " + thickness/2.0);
+                y1 -= (thickness/2.0);
+                y2 -= (thickness/2.0);
+            }
+
+            if((c1 == '8' && c2 == '9') || (c2 == '8' && c1 == '9')) {
+                System.out.println("here: " + thickness/2.0);
+                y1 -= (thickness/2.0);
+                y2 -= (thickness/2.0);
+            }
+
+
+
+
             graphicsContext.strokeLine(x1, y1, x2, y2);
             System.out.println("x1: " + x1 + ", y1: " + y1 + ", x2: " + x2 + ", y2: " + y2);
         }
