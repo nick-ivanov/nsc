@@ -137,6 +137,23 @@ public class SignalQuantumImage extends Canvas {
             }
 
 
+            if((c1 == '1' && c2 == '4') || (c2 == '1' && c1 == '4')) {
+                System.out.println("here: " + thickness/2.0);
+                x1 += (thickness/2.0);
+                x2 += (thickness/2.0);
+            }
+
+            if((c1 == '1' && c2 == '7') || (c2 == '1' && c1 == '7')) {
+                System.out.println("here: " + thickness/2.0);
+                x1 += (thickness/2.0);
+                x2 += (thickness/2.0);
+            }
+
+            if((c1 == '4' && c2 == '7') || (c2 == '4' && c1 == '7')) {
+                System.out.println("here: " + thickness/2.0);
+                x1 += (thickness/2.0);
+                x2 += (thickness/2.0);
+            }
 
 
             graphicsContext.strokeLine(x1, y1, x2, y2);

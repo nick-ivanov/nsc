@@ -100,8 +100,8 @@
       <file leaf-file-name="SignalQuantumImage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/nsc/SignalQuantumImage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="132" column="65" lean-forward="false" selection-start-line="132" selection-start-column="65" selection-end-line="132" selection-end-column="65" />
+            <state relative-caret-position="430">
+              <caret line="155" column="13" lean-forward="true" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -781,7 +781,7 @@
       <workItem from="1469942963628" duration="6431000" />
       <workItem from="1470692197578" duration="140000" />
       <workItem from="1470692491104" duration="701000" />
-      <workItem from="1515122423321" duration="14042000" />
+      <workItem from="1515122423321" duration="14523000" />
     </task>
     <task id="LOCAL-00001" summary="Added License.txt">
       <created>1469223902046</created>
@@ -916,11 +916,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515203144776</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Quantum Y-coordinates fixed">
+      <created>1515204646330</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1515204646330</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58405000" />
+    <option name="totallyTimeSpent" value="58886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="841" extended-state="0" />
@@ -991,7 +998,8 @@
     <MESSAGE value="Properties for labels" />
     <MESSAGE value="Bug fixes" />
     <MESSAGE value="Bug fixes and code improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug fixes and code improvements" />
+    <MESSAGE value="Quantum Y-coordinates fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Quantum Y-coordinates fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1311,8 +1319,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nsc/SignalQuantumImage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="132" column="65" lean-forward="false" selection-start-line="132" selection-start-column="65" selection-end-line="132" selection-end-column="65" />
+        <state relative-caret-position="430">
+          <caret line="155" column="13" lean-forward="true" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="13" />
           <folding />
         </state>
       </provider>
