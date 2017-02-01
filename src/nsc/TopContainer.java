@@ -30,17 +30,17 @@ import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
 
-public class TopContainer extends MenuBar {
-    final Menu fileMenu = new Menu("File");
-    final Menu editMenu = new Menu("Edit");
-    final Menu viewMenu = new Menu("View");
-    final Menu helpMenu = new Menu("Help");
+class TopContainer extends MenuBar {
+    final private Menu fileMenu = new Menu("File");
+    final private Menu editMenu = new Menu("Edit");
+    final private Menu viewMenu = new Menu("View");
+    final private Menu helpMenu = new Menu("Help");
 
-    final MenuItem quitMenuItem = new MenuItem("Quit");
-    final MenuItem manualMenuItem = new MenuItem("Documentation");
-    final MenuItem aboutMenuItem = new MenuItem("About");
+    final private MenuItem quitMenuItem = new MenuItem("Quit");
+    final private MenuItem manualMenuItem = new MenuItem("Documentation");
+    final private MenuItem aboutMenuItem = new MenuItem("About");
 
-    public TopContainer(Stage stage) {
+    TopContainer(Stage stage) {
         fileMenu.getItems().add(quitMenuItem);
         helpMenu.getItems().addAll(manualMenuItem, aboutMenuItem);
         this.getMenus().addAll(fileMenu, editMenu, viewMenu, helpMenu);

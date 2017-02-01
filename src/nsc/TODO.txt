@@ -1,3 +1,1 @@
 * Use CSS for visual properties
-* Make signal lines nice
-

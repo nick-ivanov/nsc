@@ -84,7 +84,6 @@ public class CenterContainer extends VBox {
         // ======= LOOK =================
         prev.setMaxWidth(65);
         prev.setPadding(new Insets(5));
-        //prev.setStyle("-fx-background-color: red;");
         initial.setPadding(new Insets(5));
 
         nrzl.setPadding(new Insets(10));

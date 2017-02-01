@@ -28,7 +28,7 @@ public class SignalProcessor {
     private Spinner<Integer> prev;
     private Spinner<Integer>[] sp;
 
-    public SignalProcessor(int numberOfBits, SignalQuantumImage[][] qim, Spinner<Integer> prev, Spinner<Integer>[] sp) {
+    SignalProcessor(int numberOfBits, SignalQuantumImage[][] qim, Spinner<Integer> prev, Spinner<Integer>[] sp) {
         this.numberOfBits = numberOfBits;
         this.qim = qim;
         this.prev = prev;
@@ -93,14 +93,11 @@ public class SignalProcessor {
                 if(p == 1) { qim[2][i].drawQuantum("13"); p = 1; }
                 else { qim[2][i].drawQuantum("79"); p = 0; }
             }
-
-
         }
     }
 
     public void processBipolar()
     {
-        System.out.println("Bipolar AMI");
         int a, p, pp;
 
         p = prev.getValue();
@@ -123,9 +120,6 @@ public class SignalProcessor {
                 }
             }
         }
-
-        System.out.println("END OF Bipolar AMI");
-
     }
 
     public void processManchester()
