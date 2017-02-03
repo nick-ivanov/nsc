@@ -34,7 +34,7 @@ public class CenterContainer extends VBox {
     private final double quantumHeight = 80;
     private final Color quantumColor = Color.BLACK;
     private final double quantumThickness = 10;
-    private final int numberOfBits = 16;
+    private final int numberOfBits = 8;
 
     private GridPane grid = new GridPane();
     private Label initial = new Label(NSCPropertyHelper.getProperty("bits_label"));
@@ -129,7 +129,7 @@ public class CenterContainer extends VBox {
         grid.add(imanchester, 1, 5);
         grid.add(idmanchester, 1, 6);
 
-        for(int i = 0; i < 16; i++) {
+        for(int i = 0; i < numberOfBits; i++) {
             grid.add(sp[i], i+2, 0);
             sp[i].setMaxWidth(quantumWidth-5);
             for(int j = 0; j < 6; j++) {
