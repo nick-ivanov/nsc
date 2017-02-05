@@ -51,9 +51,9 @@ public class CenterContainer extends VBox {
     private Label dmanchester = new Label(NSCPropertyHelper.getProperty("dmanchester_label"));
 
     ImageView inrzl = new ImageView(
-                new Image(getClass().getResourceAsStream("images/01.png")));
+                new Image(getClass().getResourceAsStream("images/inrzl_polarity.png")));
     ImageView inrzpolar = new ImageView(
-                new Image(getClass().getResourceAsStream("images/02.png")));
+                new Image(getClass().getResourceAsStream("images/inrzpolar_polarity.png")));
     ImageView inrzi = new ImageView(
                 new Image(getClass().getResourceAsStream("images/03.png")));
     ImageView ibipolar = new ImageView(
