@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Minor improvements">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/nsc/CenterContainer.java" afterPath="$PROJECT_DIR$/src/nsc/CenterContainer.java" />
-      <change beforePath="$PROJECT_DIR$/src/nsc/images/02.png" afterPath="$PROJECT_DIR$/src/nsc/images/inrzpolar_polarity.png" />
+      <change beforePath="$PROJECT_DIR$/src/nsc/images/03.png" afterPath="$PROJECT_DIR$/src/nsc/images/inrzi_polarity.png" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,8 +81,8 @@
       <file leaf-file-name="CenterContainer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/nsc/CenterContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="55" column="83" lean-forward="false" selection-start-line="55" selection-start-column="83" selection-end-line="55" selection-end-column="83" />
+            <state relative-caret-position="345">
+              <caret line="57" column="79" lean-forward="false" selection-start-line="57" selection-start-column="79" selection-end-line="57" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -830,7 +830,7 @@
       <workItem from="1469942963628" duration="6431000" />
       <workItem from="1470692197578" duration="140000" />
       <workItem from="1470692491104" duration="701000" />
-      <workItem from="1515122423321" duration="16647000" />
+      <workItem from="1515122423321" duration="16775000" />
     </task>
     <task id="LOCAL-00001" summary="Added License.txt">
       <created>1469223902046</created>
@@ -993,11 +993,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515206774720</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Minor improvements in CenterContainer">
+      <created>1515208089762</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1515208089762</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61010000" />
+    <option name="totallyTimeSpent" value="61138000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="841" extended-state="0" />
@@ -1072,7 +1079,8 @@
     <MESSAGE value="Bug fixes and minor improvements" />
     <MESSAGE value="NullPointerException bugfix" />
     <MESSAGE value="Minor improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor improvements" />
+    <MESSAGE value="Minor improvements in CenterContainer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor improvements in CenterContainer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1264,7 +1272,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nsc/images/03.png">
+    <entry file="file://$PROJECT_DIR$/src/nsc/images/inrzi_polarity.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -1392,8 +1400,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nsc/CenterContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="55" column="83" lean-forward="false" selection-start-line="55" selection-start-column="83" selection-end-line="55" selection-end-column="83" />
+        <state relative-caret-position="345">
+          <caret line="57" column="79" lean-forward="false" selection-start-line="57" selection-start-column="79" selection-end-line="57" selection-end-column="79" />
           <folding />
         </state>
       </provider>
