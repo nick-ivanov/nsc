@@ -59,7 +59,7 @@ public class CenterContainer extends VBox {
     ImageView ibipolar = new ImageView(
                 new Image(getClass().getResourceAsStream("images/ibipolar_polarity.png")));
     ImageView imanchester = new ImageView(
-                new Image(getClass().getResourceAsStream("images/05.png")));
+                new Image(getClass().getResourceAsStream("images/imanchester_polarity.png")));
     ImageView idmanchester = new ImageView(
                 new Image(getClass().getResourceAsStream("images/06.png")));
 
