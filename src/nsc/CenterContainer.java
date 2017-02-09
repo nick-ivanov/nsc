@@ -50,24 +50,27 @@ public class CenterContainer extends VBox {
     private Label manchester = new Label(NSCPropertyHelper.getProperty("manchester_label"));
     private Label dmanchester = new Label(NSCPropertyHelper.getProperty("dmanchester_label"));
 
-    ImageView inrzl = new ImageView(
+    private ImageView inrzl = new ImageView(
                 new Image(getClass().getResourceAsStream("images/inrzl_polarity.png")));
-    ImageView inrzpolar = new ImageView(
+    private ImageView inrzpolar = new ImageView(
                 new Image(getClass().getResourceAsStream("images/inrzpolar_polarity.png")));
-    ImageView inrzi = new ImageView(
+    private ImageView inrzi = new ImageView(
                 new Image(getClass().getResourceAsStream("images/inrzi_polarity.png")));
-    ImageView ibipolar = new ImageView(
+    private ImageView ibipolar = new ImageView(
                 new Image(getClass().getResourceAsStream("images/ibipolar_polarity.png")));
-    ImageView imanchester = new ImageView(
+    private ImageView imanchester = new ImageView(
                 new Image(getClass().getResourceAsStream("images/imanchester_polarity.png")));
-    ImageView idmanchester = new ImageView(
-                new Image(getClass().getResourceAsStream("images/06.png")));
+    private ImageView idmanchester = new ImageView(
+                new Image(getClass().getResourceAsStream("images/idmanchester_polarity.png")));
 
     private SignalProcessor processor;
 
     CenterContainer() {
         super();
+        reloadContainer();
+    }
 
+    private void reloadContainer() {
         for(int i = 0; i < numberOfBits; i++) {
             sp[i] = new Spinner(0, 1, 0);
             sp[i].setPadding(new Insets(5));
