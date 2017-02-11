@@ -20,27 +20,16 @@
 
 package nsc;
 
-import javafx.application.Application;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
+import javafx.scene.control.Label;
+import javafx.scene.layout.HBox;
 
-public class NSC extends Application {
-    private RootContainer rootContainer;
-    private Scene scene;
+public class BitBox extends HBox {
+    private Label messageLabel;
 
-    @Override
-    public void start(Stage primaryStage) {
-        int defaultWidth = Integer.parseInt(NSCPropertyHelper.getProperty("default_width").trim());
-        int defaultHeight = Integer.parseInt(NSCPropertyHelper.getProperty("default_height").trim());
+    public BitBox() {
+        super();
+        messageLabel = new Label("Message: ");
 
-        rootContainer = new RootContainer(primaryStage);
-        scene = new Scene(rootContainer, defaultWidth, defaultHeight);
-        primaryStage.setTitle(NSCPropertyHelper.getProperty("application_name"));
-        primaryStage.setScene(scene);
-        primaryStage.show();
-    }
-
-    public static void main(String[] args) {
-        launch(args);
+        this.getChildren().addAll(messageLabel);
     }
 }

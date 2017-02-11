@@ -20,20 +20,17 @@
 
 package nsc;
 
-import javafx.geometry.Insets;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.layout.Region;
 import javafx.scene.paint.Color;
 
 public class SignalQuantumImage extends Canvas {
-    Canvas canvas;
-    GraphicsContext graphicsContext;
+    private Canvas canvas;
+    private GraphicsContext graphicsContext;
     private double width, height, thickness;
     private Color color;
     private String code;
 
-    // TODO: Use enum instead of string
     SignalQuantumImage(double width, double height, Color color, double thickness, String code) {
         super(width, height);
         canvas = new Canvas(width, height);

@@ -29,7 +29,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 
-public class CenterContainer extends VBox {
+class CenterContainer extends VBox {
     private final double quantumWidth = 80;
     private final double quantumHeight = 80;
     private final Color quantumColor = Color.BLACK;
@@ -65,8 +65,11 @@ public class CenterContainer extends VBox {
 
     private SignalProcessor processor;
 
+    private BitBox bitBox;
+
     CenterContainer() {
         super();
+        bitBox = new BitBox();
         reloadContainer();
     }
 
@@ -141,7 +144,7 @@ public class CenterContainer extends VBox {
         }
 
         // Add here additional top item
-        this.getChildren().addAll(grid);
+        this.getChildren().addAll(bitBox, grid);
 
         prev.valueProperty().addListener((obs, oldValue, newValue) -> updateSignals());
 
