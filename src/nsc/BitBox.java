@@ -21,15 +21,18 @@
 package nsc;
 
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 
 public class BitBox extends HBox {
     private Label messageLabel;
+    private TextField messageTextField;
 
     public BitBox() {
         super();
         messageLabel = new Label("Message: ");
+        messageTextField = new TextField("00000000");
 
-        this.getChildren().addAll(messageLabel);
+        this.getChildren().addAll(messageLabel, messageTextField);
     }
 }

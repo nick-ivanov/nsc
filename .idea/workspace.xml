@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Minor improvements and bug fixes">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/nsc/BitBox.java" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/nsc/CenterContainer.java" afterPath="$PROJECT_DIR$/src/nsc/CenterContainer.java" />
-      <change beforePath="$PROJECT_DIR$/src/nsc/NSC.java" afterPath="$PROJECT_DIR$/src/nsc/NSC.java" />
-      <change beforePath="$PROJECT_DIR$/src/nsc/SignalQuantumImage.java" afterPath="$PROJECT_DIR$/src/nsc/SignalQuantumImage.java" />
+      <change beforePath="$PROJECT_DIR$/src/nsc/BitBox.java" afterPath="$PROJECT_DIR$/src/nsc/BitBox.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,7 +67,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CenterContainer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CenterContainer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nsc/CenterContainer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="389">
@@ -80,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BitBox.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BitBox.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/nsc/BitBox.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="473">
-              <caret line="32" column="48" lean-forward="false" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+              <caret line="35" column="64" lean-forward="false" selection-start-line="35" selection-start-column="64" selection-end-line="35" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -153,8 +150,8 @@
         <option value="$PROJECT_DIR$/src/nsc/TopContainer.java" />
         <option value="$PROJECT_DIR$/src/nsc/NSC.java" />
         <option value="$PROJECT_DIR$/src/nsc/SignalQuantumImage.java" />
-        <option value="$PROJECT_DIR$/src/nsc/BitBox.java" />
         <option value="$PROJECT_DIR$/src/nsc/CenterContainer.java" />
+        <option value="$PROJECT_DIR$/src/nsc/BitBox.java" />
       </list>
     </option>
   </component>
@@ -747,7 +744,7 @@
       <workItem from="1469942963628" duration="6431000" />
       <workItem from="1470692197578" duration="140000" />
       <workItem from="1470692491104" duration="701000" />
-      <workItem from="1515122423321" duration="19197000" />
+      <workItem from="1515122423321" duration="19664000" />
     </task>
     <task id="LOCAL-00001" summary="Added License.txt">
       <created>1469223902046</created>
@@ -945,11 +942,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515209084443</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="BitBox class added">
+      <created>1515210786471</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1515210786471</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63560000" />
+    <option name="totallyTimeSpent" value="64027000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="841" extended-state="0" />
@@ -1029,7 +1033,8 @@
     <MESSAGE value="Differential Manchester Polarity image" />
     <MESSAGE value="Added reloadContainer() in CenterContainer" />
     <MESSAGE value="Minor improvements and bug fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor improvements and bug fixes" />
+    <MESSAGE value="BitBox class added" />
+    <option name="LAST_COMMIT_MESSAGE" value="BitBox class added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1339,18 +1344,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nsc/BitBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="32" column="48" lean-forward="false" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nsc/CenterContainer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
           <caret line="146" column="42" lean-forward="false" selection-start-line="146" selection-start-column="42" selection-end-line="146" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nsc/BitBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="35" column="64" lean-forward="false" selection-start-line="35" selection-start-column="64" selection-end-line="35" selection-end-column="64" />
           <folding />
         </state>
       </provider>
