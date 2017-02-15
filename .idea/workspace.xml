@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/nsc/MessageDialog.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/nsc/BitBox.java" afterPath="$PROJECT_DIR$/src/nsc/BitBox.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,11 +77,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BitBox.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BitBox.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nsc/BitBox.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="473">
               <caret line="35" column="64" lean-forward="false" selection-start-line="35" selection-start-column="64" selection-end-line="35" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageDialog.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/nsc/MessageDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1400">
+              <caret line="76" column="57" lean-forward="false" selection-start-line="76" selection-start-column="57" selection-end-line="76" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -152,6 +162,7 @@
         <option value="$PROJECT_DIR$/src/nsc/SignalQuantumImage.java" />
         <option value="$PROJECT_DIR$/src/nsc/CenterContainer.java" />
         <option value="$PROJECT_DIR$/src/nsc/BitBox.java" />
+        <option value="$PROJECT_DIR$/src/nsc/MessageDialog.java" />
       </list>
     </option>
   </component>
@@ -744,7 +755,7 @@
       <workItem from="1469942963628" duration="6431000" />
       <workItem from="1470692197578" duration="140000" />
       <workItem from="1470692491104" duration="701000" />
-      <workItem from="1515122423321" duration="19664000" />
+      <workItem from="1515122423321" duration="20136000" />
     </task>
     <task id="LOCAL-00001" summary="Added License.txt">
       <created>1469223902046</created>
@@ -949,11 +960,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515210786471</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="BitBox improvement">
+      <created>1515211243958</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1515211243958</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64027000" />
+    <option name="totallyTimeSpent" value="64499000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="841" extended-state="0" />
@@ -1009,7 +1027,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added License.txt" />
     <MESSAGE value="Source code refactoring&#10;Main menu" />
     <MESSAGE value="Created SignalQuantumImage class that will later substitute file images&#10;Minor changes and bug fixes" />
     <MESSAGE value="Implemented SignalQuantumImage&#10;Minor fixes" />
@@ -1034,7 +1051,8 @@
     <MESSAGE value="Added reloadContainer() in CenterContainer" />
     <MESSAGE value="Minor improvements and bug fixes" />
     <MESSAGE value="BitBox class added" />
-    <option name="LAST_COMMIT_MESSAGE" value="BitBox class added" />
+    <MESSAGE value="BitBox improvement" />
+    <option name="LAST_COMMIT_MESSAGE" value="BitBox improvement" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1050,14 +1068,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/nsc/CenterContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2318">
-          <caret line="150" column="14" lean-forward="false" selection-start-line="150" selection-start-column="12" selection-end-line="150" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nsc/FittingTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1356,6 +1366,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="473">
           <caret line="35" column="64" lean-forward="false" selection-start-line="35" selection-start-column="64" selection-end-line="35" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nsc/MessageDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1400">
+          <caret line="76" column="57" lean-forward="false" selection-start-line="76" selection-start-column="57" selection-end-line="76" selection-end-column="57" />
           <folding />
         </state>
       </provider>
