@@ -28,13 +28,16 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-class TopContainer extends MenuBar {
+class TopContainer extends VBox {
     final private Menu fileMenu = new Menu("File");
     final private Menu editMenu = new Menu("Edit");
     final private Menu viewMenu = new Menu("View");
     final private Menu helpMenu = new Menu("Help");
+
+    final private MenuBar menuBar;
 
     final private MenuItem quitMenuItem = new MenuItem("Quit");
     final private MenuItem manualMenuItem = new MenuItem("Documentation");
@@ -43,8 +46,11 @@ class TopContainer extends MenuBar {
     TopContainer(Stage stage) {
         fileMenu.getItems().add(quitMenuItem);
         helpMenu.getItems().addAll(manualMenuItem, aboutMenuItem);
-        this.getMenus().addAll(fileMenu, editMenu, viewMenu, helpMenu);
 
+        menuBar = new MenuBar();
+        menuBar.getMenus().addAll(fileMenu, editMenu, viewMenu, helpMenu);
+
+        this.getChildren().add(menuBar);
         setEvents(stage);
     }
 
