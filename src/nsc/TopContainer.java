@@ -38,6 +38,7 @@ class TopContainer extends VBox {
     final private Menu helpMenu = new Menu("Help");
 
     final private MenuBar menuBar;
+    final private MainToolBar toolBar;
 
     final private MenuItem quitMenuItem = new MenuItem("Quit");
     final private MenuItem manualMenuItem = new MenuItem("Documentation");
@@ -50,7 +51,9 @@ class TopContainer extends VBox {
         menuBar = new MenuBar();
         menuBar.getMenus().addAll(fileMenu, editMenu, viewMenu, helpMenu);
 
-        this.getChildren().add(menuBar);
+        toolBar = new MainToolBar();
+
+        this.getChildren().addAll(menuBar, toolBar);
         setEvents(stage);
     }
 

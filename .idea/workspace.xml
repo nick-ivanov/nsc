@@ -140,8 +140,8 @@
       <file leaf-file-name="TopContainer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/nsc/TopContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="52" column="40" lean-forward="false" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
+            <state relative-caret-position="421">
+              <caret line="55" column="33" lean-forward="false" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -806,7 +806,7 @@
       <workItem from="1469942963628" duration="6431000" />
       <workItem from="1470692197578" duration="140000" />
       <workItem from="1470692491104" duration="701000" />
-      <workItem from="1515122423321" duration="24089000" />
+      <workItem from="1515122423321" duration="24494000" />
     </task>
     <task id="LOCAL-00001" summary="Added License.txt">
       <created>1469223902046</created>
@@ -1032,11 +1032,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515254795676</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="MenuBar Wrapped in HBox">
+      <created>1515256792397</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1515256792397</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68452000" />
+    <option name="totallyTimeSpent" value="68857000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="841" extended-state="0" />
@@ -1092,7 +1099,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implemented SignalQuantumImage&#10;Minor fixes" />
     <MESSAGE value="Switched to self-drawing from the pre-defined images&#10;Introduced scrolling&#10;Code cleanups&#10;Many minor improvements" />
     <MESSAGE value="Version 0.2&#10;* Switched from static images to canvas drawing&#10;* Performance and design improvements" />
     <MESSAGE value="Nice polarity images and Edit menu" />
@@ -1117,7 +1123,8 @@
     <MESSAGE value="BitBox improvement" />
     <MESSAGE value="Class MessageDialog created" />
     <MESSAGE value="Added MainToolBar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added MainToolBar" />
+    <MESSAGE value="MenuBar Wrapped in HBox" />
+    <option name="LAST_COMMIT_MESSAGE" value="MenuBar Wrapped in HBox" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1437,8 +1444,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nsc/TopContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="52" column="40" lean-forward="false" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
+        <state relative-caret-position="421">
+          <caret line="55" column="33" lean-forward="false" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
           <folding />
         </state>
       </provider>
