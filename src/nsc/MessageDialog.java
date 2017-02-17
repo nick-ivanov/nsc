@@ -1,14 +1,31 @@
+/*
+    Network Signal Coder -- a utility that converts binary
+        sequences into standard network physical signals.
+
+    Copyright (C) 2015-2017  Nick Ivanov <nnrowan@gmail.com>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 package nsc;
+
 import java.util.HashMap;
-import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -18,21 +35,12 @@ import javafx.stage.Stage;
 
 public class MessageDialog {
 
-    private ListView listView;
-    private HashMap<Integer, String> hm;
-    private HashMap<Integer, String> namehm;
-    private HashMap<Integer, String> urlhm;
-    private HashMap<Integer, String> idhm;
-    private ListView bookmarkListView;
+    private String message;
+    private CenterContainer container;
 
-    public MessageDialog(ListView lv, ListView lv1, HashMap<Integer, String> hm, HashMap<Integer, String> idhm,
-                               HashMap<Integer, String> namehm, HashMap<Integer, String> urlhm) {
-        this.listView = lv;
-        this.bookmarkListView = lv1;
-        this.hm = hm;
-        this.namehm = namehm;
-        this.urlhm = urlhm;
-        this.idhm = idhm;
+    public MessageDialog(CenterContainer container, String message) {
+        this.message = message;
+        this.container = container;
     }
 
     public void go() {
@@ -40,7 +48,7 @@ public class MessageDialog {
         dialog.setTitle("Enter binary message");
 
         dialog.initModality(Modality.NONE);
-        dialog.initOwner((Stage) listView.getScene().getWindow());
+        dialog.initOwner((Stage) container.getScene().getWindow());
 
         VBox vbox = new VBox();
         vbox.setPadding(new Insets(15));
@@ -63,7 +71,7 @@ public class MessageDialog {
 
         hbox3.setAlignment(Pos.BASELINE_CENTER);
 
-        Label title = new Label("Entry binary message '" + listView.getSelectionModel().getSelectedItem().toString() + "'");
+        Label title = new Label("Entry binary message");
         title.setFont(new Font(24));
 
         Label label1 = new Label("Binary message:");
@@ -111,6 +119,7 @@ public class MessageDialog {
                         dialog.close();
                     }
                 });
+
         cancelButton.addEventHandler(MouseEvent.MOUSE_CLICKED,
                 new EventHandler<MouseEvent>() {
                     @Override
