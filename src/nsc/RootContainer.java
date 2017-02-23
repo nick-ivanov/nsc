@@ -20,6 +20,7 @@
 
 package nsc;
 
+import javafx.print.PrinterJob;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
@@ -36,6 +37,22 @@ public class RootContainer extends BorderPane {
         topContainer = new TopContainer(this.stage);
         centerContainer = new CenterContainer();
         centerScrollPane.setContent(centerContainer);
+
+//        PrinterJob job = PrinterJob.createPrinterJob();
+//
+//        if (job != null) {
+//            boolean success = job.showPageSetupDialog(this.stage);
+//            if (success) {
+//                boolean printed = job.printPage(centerContainer);
+//
+//                if (printed)
+//                {
+//                    job.endJob();
+//                }
+//
+//            }
+//        }
+
 
         this.setTop(topContainer);
         this.setCenter(centerScrollPane);
