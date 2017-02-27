@@ -65,11 +65,8 @@ class CenterContainer extends VBox {
 
     private SignalProcessor processor;
 
-    private BitBox bitBox;
-
     CenterContainer() {
         super();
-        bitBox = new BitBox();
         reloadContainer();
     }
 
@@ -144,7 +141,7 @@ class CenterContainer extends VBox {
         }
 
         // Add here additional top item
-        this.getChildren().addAll(bitBox, grid);
+        this.getChildren().addAll(grid);
 
         prev.valueProperty().addListener((obs, oldValue, newValue) -> updateSignals());
 
