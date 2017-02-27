@@ -13,6 +13,9 @@ public class MainToolBar extends ToolBar {
         ImageView saveButtonImage = new ImageView(new Image("nsc/images/save_button.png"));
         saveButton = new Button();
         saveButton.setGraphic(saveButtonImage);
-        this.getItems().add(saveButton);
+
+        BitBox bitBox = new BitBox();
+
+        this.getItems().addAll(saveButton, bitBox);
     }
 }
