@@ -20,6 +20,7 @@
 
 package nsc;
 
+import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
@@ -30,6 +31,7 @@ public class BitBox extends HBox {
 
     public BitBox() {
         super();
+        this.setAlignment(Pos.BASELINE_CENTER);
         messageLabel = new Label("Message: ");
         messageTextField = new TextField("00000000");
 

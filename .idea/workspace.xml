@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/nsc/MainToolBar.java" afterPath="$PROJECT_DIR$/src/nsc/MainToolBar.java" />
+      <change beforePath="$PROJECT_DIR$/src/nsc/BitBox.java" afterPath="$PROJECT_DIR$/src/nsc/BitBox.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -97,7 +97,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainToolBar.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainToolBar.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nsc/MainToolBar.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
@@ -107,11 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BitBox.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BitBox.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/nsc/BitBox.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="2" />
+            <state relative-caret-position="378">
+              <caret line="33" column="46" lean-forward="false" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -210,11 +210,11 @@
         <option value="$PROJECT_DIR$/src/nsc/NSC.java" />
         <option value="$PROJECT_DIR$/src/nsc/SignalQuantumImage.java" />
         <option value="$PROJECT_DIR$/src/nsc/CenterContainer.java" />
-        <option value="$PROJECT_DIR$/src/nsc/BitBox.java" />
         <option value="$PROJECT_DIR$/src/nsc/MessageDialog.java" />
         <option value="$PROJECT_DIR$/src/nsc/TopContainer.java" />
         <option value="$PROJECT_DIR$/src/nsc/RootContainer.java" />
         <option value="$PROJECT_DIR$/src/nsc/MainToolBar.java" />
+        <option value="$PROJECT_DIR$/src/nsc/BitBox.java" />
       </list>
     </option>
   </component>
@@ -807,7 +807,7 @@
       <workItem from="1469942963628" duration="6431000" />
       <workItem from="1470692197578" duration="140000" />
       <workItem from="1470692491104" duration="701000" />
-      <workItem from="1515122423321" duration="27769000" />
+      <workItem from="1515122423321" duration="27965000" />
     </task>
     <task id="LOCAL-00001" summary="Added License.txt">
       <created>1469223902046</created>
@@ -1068,11 +1068,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515262326879</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="BitBox added to the toolbar">
+      <created>1515262634080</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1515262634080</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72132000" />
+    <option name="totallyTimeSpent" value="72328000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="841" extended-state="0" />
@@ -1128,7 +1135,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Property manager added" />
     <MESSAGE value="default_width and default_height properties added" />
     <MESSAGE value="Code refactoring" />
     <MESSAGE value="Properties for labels" />
@@ -1153,7 +1159,8 @@
     <MESSAGE value="Save Button added to the toolbar" />
     <MESSAGE value="Smaller toolbar buttons" />
     <MESSAGE value="Print experiment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Print experiment" />
+    <MESSAGE value="BitBox added to the toolbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="BitBox added to the toolbar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1431,14 +1438,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nsc/BitBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nsc/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -1475,6 +1474,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nsc/BitBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="33" column="46" lean-forward="false" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
           <folding />
         </state>
       </provider>
