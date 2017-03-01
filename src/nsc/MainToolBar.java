@@ -8,6 +8,7 @@ import javafx.scene.image.ImageView;
 public class MainToolBar extends ToolBar {
     private Button saveButton;
     private Button clearButton;
+    private Button printButton;
 
     public MainToolBar() {
 
@@ -15,13 +16,18 @@ public class MainToolBar extends ToolBar {
         saveButton = new Button();
         saveButton.setGraphic(saveButtonImage);
 
+        ImageView printButtonImage = new ImageView(new Image("nsc/images/print_button.png"));
+        printButton = new Button();
+        printButton.setGraphic(printButtonImage);
+
         ImageView clearButtonImage = new ImageView(new Image("nsc/images/clear_button.png"));
         clearButton = new Button();
         clearButton.setGraphic(clearButtonImage);
 
 
+
         BitBox bitBox = new BitBox();
 
-        this.getItems().addAll(saveButton, clearButton, bitBox);
+        this.getItems().addAll(saveButton, printButton, clearButton, bitBox);
     }
 }
