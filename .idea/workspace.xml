@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/nsc/images/print_button.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/nsc/MainToolBar.java" afterPath="$PROJECT_DIR$/src/nsc/MainToolBar.java" />
+      <change beforePath="$PROJECT_DIR$/src/nsc/TopContainer.java" afterPath="$PROJECT_DIR$/src/nsc/TopContainer.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainToolBar.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainToolBar.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nsc/MainToolBar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="24" column="49" lean-forward="true" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+            <state relative-caret-position="360">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -138,11 +138,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TopContainer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TopContainer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/nsc/TopContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="55" column="33" lean-forward="false" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+            <state relative-caret-position="332">
+              <caret line="55" column="52" lean-forward="true" selection-start-line="55" selection-start-column="52" selection-end-line="55" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -211,11 +211,11 @@
         <option value="$PROJECT_DIR$/src/nsc/NSC.java" />
         <option value="$PROJECT_DIR$/src/nsc/SignalQuantumImage.java" />
         <option value="$PROJECT_DIR$/src/nsc/MessageDialog.java" />
-        <option value="$PROJECT_DIR$/src/nsc/TopContainer.java" />
         <option value="$PROJECT_DIR$/src/nsc/RootContainer.java" />
         <option value="$PROJECT_DIR$/src/nsc/BitBox.java" />
         <option value="$PROJECT_DIR$/src/nsc/CenterContainer.java" />
         <option value="$PROJECT_DIR$/src/nsc/MainToolBar.java" />
+        <option value="$PROJECT_DIR$/src/nsc/TopContainer.java" />
       </list>
     </option>
   </component>
@@ -815,7 +815,7 @@
       <workItem from="1469942963628" duration="6431000" />
       <workItem from="1470692197578" duration="140000" />
       <workItem from="1470692491104" duration="701000" />
-      <workItem from="1515122423321" duration="28541000" />
+      <workItem from="1515122423321" duration="29114000" />
     </task>
     <task id="LOCAL-00001" summary="Added License.txt">
       <created>1469223902046</created>
@@ -1104,11 +1104,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515263717722</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Print button added">
+      <created>1515263987846</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1515263987846</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72904000" />
+    <option name="totallyTimeSpent" value="73477000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="841" extended-state="0" />
@@ -1164,7 +1171,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Bug fixes" />
     <MESSAGE value="Bug fixes and code improvements" />
     <MESSAGE value="Quantum Y-coordinates fixed" />
     <MESSAGE value="Quantum X-coordinates fixed" />
@@ -1189,7 +1195,8 @@
     <MESSAGE value="BitBox label baseline center" />
     <MESSAGE value="BitBox remove old copy from center container" />
     <MESSAGE value="Clear button added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clear button added" />
+    <MESSAGE value="Print button added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Print button added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1443,14 +1450,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nsc/TopContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="55" column="33" lean-forward="false" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nsc/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -1506,8 +1505,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nsc/MainToolBar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="24" column="49" lean-forward="true" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+        <state relative-caret-position="360">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nsc/TopContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="55" column="52" lean-forward="true" selection-start-line="55" selection-start-column="52" selection-end-line="55" selection-end-column="52" />
           <folding />
         </state>
       </provider>

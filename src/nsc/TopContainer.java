@@ -51,7 +51,7 @@ class TopContainer extends VBox {
         menuBar = new MenuBar();
         menuBar.getMenus().addAll(fileMenu, editMenu, viewMenu, helpMenu);
 
-        toolBar = new MainToolBar();
+        toolBar = new MainToolBar(stage);
 
         this.getChildren().addAll(menuBar, toolBar);
         setEvents(stage);
