@@ -37,4 +37,8 @@ public class BitBox extends HBox {
 
         this.getChildren().addAll(messageLabel, messageTextField);
     }
+
+    public void clear() {
+        messageLabel.setText("00000000");
+    }
 }

@@ -63,9 +63,6 @@ public class MainToolBar extends ToolBar {
             }
         });
 
-
-
-
         BitBox bitBox = new BitBox();
 
         this.getItems().addAll(openButton, saveButton, printButton, clearButton, bitBox);
