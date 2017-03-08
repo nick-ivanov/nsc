@@ -48,6 +48,6 @@ public class BitBox extends HBox {
     }
 
     public void clear() {
-        messageLabel.setText(clearString);
+        messageTextField.setText(clearString);
     }
 }
