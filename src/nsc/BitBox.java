@@ -28,17 +28,26 @@ import javafx.scene.layout.HBox;
 public class BitBox extends HBox {
     private Label messageLabel;
     private TextField messageTextField;
+    private String clearString;
 
     public BitBox() {
         super();
+
+        int defaultBitLength = Integer.parseInt(NSCPropertyHelper.getProperty("default_bit_length"));
+
+        clearString = "";
+        for(int i = 0; i < defaultBitLength; i++) {
+            clearString += "0";
+        }
+
         this.setAlignment(Pos.BASELINE_CENTER);
         messageLabel = new Label("Message: ");
-        messageTextField = new TextField("00000000");
+        messageTextField = new TextField(clearString);
 
         this.getChildren().addAll(messageLabel, messageTextField);
     }
 
     public void clear() {
-        messageLabel.setText("00000000");
+        messageLabel.setText(clearString);
     }
 }
