@@ -44,6 +44,9 @@ public class BitBox extends HBox {
         messageLabel = new Label("Message: ");
         messageTextField = new TextField(clearString);
 
+        int messageFieldMaxLength = Integer.parseInt(NSCPropertyHelper.getProperty("message_field_max_length"));
+        messageTextField.setPrefColumnCount(64);
+
         this.getChildren().addAll(messageLabel, messageTextField);
     }
 
