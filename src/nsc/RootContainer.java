@@ -34,8 +34,9 @@ public class RootContainer extends BorderPane {
     RootContainer(Stage stage) {
         super();
         this.stage = stage;
-        topContainer = new TopContainer(this.stage);
         centerContainer = new CenterContainer();
+        topContainer = new TopContainer(this.stage, centerContainer);
+
         centerScrollPane.setContent(centerContainer);
 
 //        PrinterJob job = PrinterJob.createPrinterJob();

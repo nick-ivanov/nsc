@@ -44,14 +44,17 @@ class TopContainer extends VBox {
     final private MenuItem manualMenuItem = new MenuItem("Documentation");
     final private MenuItem aboutMenuItem = new MenuItem("About");
 
-    TopContainer(Stage stage) {
+    private CenterContainer centerContainer;
+
+    TopContainer(Stage stage, CenterContainer centerContainer) {
+        this.centerContainer = centerContainer;
         fileMenu.getItems().add(quitMenuItem);
         helpMenu.getItems().addAll(manualMenuItem, aboutMenuItem);
 
         menuBar = new MenuBar();
         menuBar.getMenus().addAll(fileMenu, editMenu, viewMenu, helpMenu);
 
-        toolBar = new MainToolBar(stage);
+        toolBar = new MainToolBar(stage, centerContainer);
 
         this.getChildren().addAll(menuBar, toolBar);
         setEvents(stage);

@@ -17,7 +17,10 @@ public class MainToolBar extends ToolBar {
     private Button printButton;
     private Button openButton;
 
-    public MainToolBar(Stage stage) {
+    private CenterContainer centerContainer;
+
+    public MainToolBar(Stage stage, CenterContainer centerContainer) {
+        this.centerContainer = centerContainer;
 
         ImageView openButtonImage = new ImageView(new Image("nsc/images/open_button.png"));
         openButton = new Button();
@@ -67,6 +70,7 @@ public class MainToolBar extends ToolBar {
 
         clearButton.setOnAction(event -> {
             bitBox.clear();
+            centerContainer.foo();
         });
 
         this.getItems().addAll(openButton, saveButton, printButton, clearButton, bitBox);

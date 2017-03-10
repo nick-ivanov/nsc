@@ -70,6 +70,11 @@ class CenterContainer extends VBox {
         reloadContainer();
     }
 
+
+    public void foo() {
+        System.out.println("foo...");
+    }
+
     private void reloadContainer() {
         for(int i = 0; i < numberOfBits; i++) {
             sp[i] = new Spinner(0, 1, 0);
