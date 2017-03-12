@@ -66,7 +66,7 @@ public class MainToolBar extends ToolBar {
             }
         });
 
-        BitBox bitBox = new BitBox();
+        BitBox bitBox = new BitBox(centerContainer);
 
         clearButton.setOnAction(event -> {
             bitBox.clear();

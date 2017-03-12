@@ -20,6 +20,7 @@
 
 package nsc;
 
+import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -29,10 +30,12 @@ public class BitBox extends HBox {
     private Label messageLabel;
     private TextField messageTextField;
     private String clearString;
+    private CenterContainer centerContainer;
 
-    public BitBox() {
+    public BitBox(CenterContainer centerContainer) {
         super();
 
+        this.centerContainer = centerContainer;
         int defaultBitLength = Integer.parseInt(NSCPropertyHelper.getProperty("default_bit_length"));
 
         clearString = "";
@@ -46,6 +49,10 @@ public class BitBox extends HBox {
 
         int messageFieldMaxLength = Integer.parseInt(NSCPropertyHelper.getProperty("message_field_max_length"));
         messageTextField.setPrefColumnCount(64);
+
+        messageTextField.setOnKeyReleased((EventHandler) event -> {
+            centerContainer.foo();
+        });
 
         this.getChildren().addAll(messageLabel, messageTextField);
     }

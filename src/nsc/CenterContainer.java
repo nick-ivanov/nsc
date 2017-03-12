@@ -34,7 +34,7 @@ class CenterContainer extends VBox {
     private final double quantumHeight = 80;
     private final Color quantumColor = Color.BLACK;
     private final double quantumThickness = 10;
-    private final int numberOfBits = 8;
+    private int numberOfBits = 8;
 
     private GridPane grid = new GridPane();
     private Label initial = new Label(NSCPropertyHelper.getProperty("bits_label"));
@@ -75,7 +75,14 @@ class CenterContainer extends VBox {
         System.out.println("foo...");
     }
 
-    private void reloadContainer() {
+    public void resetSpinners(String message) {
+        int size = message.length();
+        numberOfBits = size;
+        grid = new GridPane();
+        reloadContainer();
+    }
+
+    public void reloadContainer() {
         for(int i = 0; i < numberOfBits; i++) {
             sp[i] = new Spinner(0, 1, 0);
             sp[i].setPadding(new Insets(5));
