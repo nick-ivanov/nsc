@@ -52,6 +52,7 @@ public class BitBox extends HBox {
 
         messageTextField.setOnKeyReleased((EventHandler) event -> {
             centerContainer.foo();
+            centerContainer.resetSpinners(messageTextField.getText());
         });
 
         this.getChildren().addAll(messageLabel, messageTextField);
