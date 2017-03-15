@@ -74,6 +74,8 @@ class CenterContainer extends VBox {
         int size = message.length();
         numberOfBits = size;
         grid = new GridPane();
+        sp = new Spinner[numberOfBits];
+        qim = new SignalQuantumImage[6][numberOfBits];
         reloadContainer();
     }
 
@@ -148,6 +150,7 @@ class CenterContainer extends VBox {
         }
 
         // Add here additional top item
+        this.getChildren().clear();
         this.getChildren().addAll(grid);
 
         prev.valueProperty().addListener((obs, oldValue, newValue) -> updateSignals());
