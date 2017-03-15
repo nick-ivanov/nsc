@@ -27,12 +27,14 @@ public class SignalProcessor {
     private SignalQuantumImage[][] qim;
     private Spinner<Integer> prev;
     private Spinner<Integer>[] sp;
+    private int[] iMsg;
 
-    SignalProcessor(int numberOfBits, SignalQuantumImage[][] qim, Spinner<Integer> prev, Spinner<Integer>[] sp) {
+    SignalProcessor(int numberOfBits, SignalQuantumImage[][] qim, int[] iMsg, Spinner<Integer> prev, Spinner<Integer>[] sp) {
         this.numberOfBits = numberOfBits;
         this.qim = qim;
         this.prev = prev;
         this.sp = sp;
+        this.iMsg = iMsg;
     }
 
     public void processNRZL()
@@ -43,6 +45,7 @@ public class SignalProcessor {
 
         for(int i = 0; i < numberOfBits; i++) {
             a = sp[i].getValue();
+            a = iMsg[i];
 
             if(a == 0) {
                 if(p == 0) { qim[0][i].drawQuantum("79"); }
@@ -53,6 +56,7 @@ public class SignalProcessor {
             }
 
             p = sp[i].getValue();
+            p = iMsg[i];
         }
     }
 

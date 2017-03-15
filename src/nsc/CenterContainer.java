@@ -40,6 +40,10 @@ class CenterContainer extends VBox {
     private Label initial = new Label(NSCPropertyHelper.getProperty("bits_label"));
     private Spinner[] sp = new Spinner[numberOfBits];
     private Spinner prev = new Spinner(0, 1, 0);
+    private String message;
+    private String defaultMessage;
+
+    private int[] iMsg = new int[numberOfBits];
 
     private SignalQuantumImage[][] qim = new SignalQuantumImage[6][numberOfBits];
 
@@ -67,14 +71,24 @@ class CenterContainer extends VBox {
 
     CenterContainer() {
         super();
+        int defaultBitLength = Integer.parseInt(NSCPropertyHelper.getProperty("default_bit_length"));
+
+        defaultMessage = "";
+        for(int i = 0; i < defaultBitLength; i++) {
+            defaultMessage += "0";
+        }
+
+        message = defaultMessage;
         reloadContainer();
     }
 
     public void resetSpinners(String message) {
         int size = message.length();
+        this.message = message;
         numberOfBits = size;
         grid = new GridPane();
         sp = new Spinner[numberOfBits];
+        iMsg = new int[numberOfBits];
         qim = new SignalQuantumImage[6][numberOfBits];
         reloadContainer();
     }
@@ -85,12 +99,21 @@ class CenterContainer extends VBox {
             sp[i].setPadding(new Insets(5));
             sp[i].setMaxWidth(55);
 
+            if(message.charAt(i) == '0') {
+                iMsg[i] = 0;
+            } else if(message.charAt(i) == '1') {
+                iMsg[i] = 1;
+            } else {
+                System.out.println("Fatal error!");
+                System.exit(1);
+            }
+
             for(int j = 0; j < 6; j++) {
                 qim[j][i] = new SignalQuantumImage(quantumWidth, quantumHeight, quantumColor, quantumThickness, "00");
             }
         }
 
-        processor = new SignalProcessor(numberOfBits, qim, prev, sp);
+        processor = new SignalProcessor(numberOfBits, qim, iMsg, prev, sp);
         updateSignals();
 
         // ======= LOOK =================

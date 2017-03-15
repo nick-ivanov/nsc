@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Save button file dialog">
       <change beforePath="$PROJECT_DIR$/src/nsc/CenterContainer.java" afterPath="$PROJECT_DIR$/src/nsc/CenterContainer.java" />
+      <change beforePath="$PROJECT_DIR$/src/nsc/SignalProcessor.java" afterPath="$PROJECT_DIR$/src/nsc/SignalProcessor.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,21 +77,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CenterContainer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CenterContainer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nsc/CenterContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="76" column="39" lean-forward="false" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
+            <state relative-caret-position="296">
+              <caret line="115" column="64" lean-forward="false" selection-start-line="115" selection-start-column="64" selection-end-line="115" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SignalProcessor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SignalProcessor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/nsc/SignalProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="568">
-              <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+            <state relative-caret-position="73">
+              <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -99,8 +100,8 @@
       <file leaf-file-name="BitBox.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nsc/BitBox.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="52" column="67" lean-forward="false" selection-start-line="52" selection-start-column="67" selection-end-line="52" selection-end-column="67" />
+            <state relative-caret-position="314">
+              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="43" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -203,7 +204,6 @@
         <option value="$PROJECT_DIR$/src/nnsignalcoder/CenterContainer.java" />
         <option value="$PROJECT_DIR$/src/nsc/FittingTest.java" />
         <option value="$PROJECT_DIR$/src/nsc/NSCPropertyHelper.java" />
-        <option value="$PROJECT_DIR$/src/nsc/SignalProcessor.java" />
         <option value="$PROJECT_DIR$/src/nsc/TODO.txt" />
         <option value="$PROJECT_DIR$/src/nsc/NSC.java" />
         <option value="$PROJECT_DIR$/src/nsc/SignalQuantumImage.java" />
@@ -214,6 +214,7 @@
         <option value="$PROJECT_DIR$/src/nsc/BitBox.java" />
         <option value="$PROJECT_DIR$/src/nsc/MainToolBar.java" />
         <option value="$PROJECT_DIR$/src/nsc/CenterContainer.java" />
+        <option value="$PROJECT_DIR$/src/nsc/SignalProcessor.java" />
       </list>
     </option>
   </component>
@@ -806,7 +807,7 @@
       <workItem from="1469942963628" duration="6431000" />
       <workItem from="1470692197578" duration="140000" />
       <workItem from="1470692491104" duration="701000" />
-      <workItem from="1515122423321" duration="33435000" />
+      <workItem from="1515122423321" duration="34728000" />
     </task>
     <task id="LOCAL-00001" summary="Added License.txt">
       <created>1469223902046</created>
@@ -1113,7 +1114,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77798000" />
+    <option name="totallyTimeSpent" value="79091000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="841" extended-state="0" />
@@ -1477,30 +1478,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nsc/MessageDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="103" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nsc/BitBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="52" column="67" lean-forward="false" selection-start-line="52" selection-start-column="67" selection-end-line="52" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nsc/SignalProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nsc/MainToolBar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
@@ -1509,10 +1486,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/nsc/BitBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="43" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/nsc/CenterContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="76" column="39" lean-forward="false" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
+        <state relative-caret-position="296">
+          <caret line="115" column="64" lean-forward="false" selection-start-line="115" selection-start-column="64" selection-end-line="115" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nsc/MessageDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="103" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nsc/SignalProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="29" />
           <folding />
         </state>
       </provider>
