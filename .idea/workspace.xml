@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Save button file dialog">
-      <change beforePath="$PROJECT_DIR$/src/nsc/CenterContainer.java" afterPath="$PROJECT_DIR$/src/nsc/CenterContainer.java" />
       <change beforePath="$PROJECT_DIR$/src/nsc/SignalProcessor.java" afterPath="$PROJECT_DIR$/src/nsc/SignalProcessor.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -90,8 +89,8 @@
       <file leaf-file-name="SignalProcessor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/nsc/SignalProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="29" />
+            <state relative-caret-position="400">
+              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -807,7 +806,7 @@
       <workItem from="1469942963628" duration="6431000" />
       <workItem from="1470692197578" duration="140000" />
       <workItem from="1470692491104" duration="701000" />
-      <workItem from="1515122423321" duration="34728000" />
+      <workItem from="1515122423321" duration="34842000" />
     </task>
     <task id="LOCAL-00001" summary="Added License.txt">
       <created>1469223902046</created>
@@ -1114,7 +1113,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79091000" />
+    <option name="totallyTimeSpent" value="79205000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="841" extended-state="0" />
@@ -1512,8 +1511,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nsc/SignalProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="29" />
+        <state relative-caret-position="400">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding />
         </state>
       </provider>
