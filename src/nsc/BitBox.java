@@ -51,7 +51,6 @@ public class BitBox extends HBox {
         messageTextField.setPrefColumnCount(64);
 
         messageTextField.setOnKeyReleased((EventHandler) event -> {
-            centerContainer.foo();
             centerContainer.resetSpinners(messageTextField.getText());
         });
 

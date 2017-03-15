@@ -70,11 +70,6 @@ class CenterContainer extends VBox {
         reloadContainer();
     }
 
-
-    public void foo() {
-        System.out.println("foo...");
-    }
-
     public void resetSpinners(String message) {
         int size = message.length();
         numberOfBits = size;

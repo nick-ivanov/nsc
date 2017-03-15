@@ -70,7 +70,6 @@ public class MainToolBar extends ToolBar {
 
         clearButton.setOnAction(event -> {
             bitBox.clear();
-            centerContainer.foo();
         });
 
         this.getItems().addAll(openButton, saveButton, printButton, clearButton, bitBox);
