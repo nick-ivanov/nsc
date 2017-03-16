@@ -65,7 +65,6 @@ public class SignalProcessor {
         p = prev.getValue();
 
         for(int i = 0; i < numberOfBits; i++) {
-            //a = sp[i].getValue();
             a = iMsg[i];
 
             if(a == 0) {
@@ -76,7 +75,6 @@ public class SignalProcessor {
                 else { qim[1][i].drawQuantum("13"); }
             }
 
-            //p = sp[i].getValue();
             p = iMsg[i];
         }
     }
