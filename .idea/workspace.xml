@@ -89,8 +89,8 @@
       <file leaf-file-name="SignalProcessor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/nsc/SignalProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="60" column="34" lean-forward="true" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="34" />
+            <state relative-caret-position="97">
+              <caret line="82" column="5" lean-forward="true" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -806,7 +806,7 @@
       <workItem from="1469942963628" duration="6431000" />
       <workItem from="1470692197578" duration="140000" />
       <workItem from="1470692491104" duration="701000" />
-      <workItem from="1515122423321" duration="35218000" />
+      <workItem from="1515122423321" duration="35423000" />
     </task>
     <task id="LOCAL-00001" summary="Added License.txt">
       <created>1469223902046</created>
@@ -1113,7 +1113,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79581000" />
+    <option name="totallyTimeSpent" value="79786000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="841" extended-state="0" />
@@ -1511,8 +1511,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nsc/SignalProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="60" column="34" lean-forward="true" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="34" />
+        <state relative-caret-position="97">
+          <caret line="82" column="5" lean-forward="true" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
           <folding />
         </state>
       </provider>
