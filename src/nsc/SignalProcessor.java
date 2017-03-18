@@ -106,7 +106,8 @@ public class SignalProcessor {
         pp = -1;
 
         for(int i = 0; i < numberOfBits; i++) {
-            a = sp[i].getValue();
+            // a = sp[i].getValue();
+            a = iMsg[i];
 
             if(a == 0) {
                 if(p == 1) { qim[3][i].drawQuantum("146"); p = 0; }
