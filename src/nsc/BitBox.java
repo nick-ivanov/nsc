@@ -48,7 +48,7 @@ public class BitBox extends HBox {
         messageTextField = new TextField(clearString);
 
         int messageFieldMaxLength = Integer.parseInt(NSCPropertyHelper.getProperty("message_field_max_length"));
-        messageTextField.setPrefColumnCount(64);
+        messageTextField.setPrefColumnCount(messageFieldMaxLength);
 
         messageTextField.setOnKeyReleased((EventHandler) event -> {
             centerContainer.resetSpinners(messageTextField.getText());
