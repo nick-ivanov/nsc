@@ -2,6 +2,7 @@ package nsc;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.print.PrinterJob;
 import javafx.scene.control.Button;
 import javafx.scene.control.ToolBar;
 import javafx.scene.image.Image;
@@ -38,6 +39,7 @@ public class MainToolBar extends ToolBar {
         clearButton = new Button();
         clearButton.setGraphic(clearButtonImage);
 
+        // TODO: Fix this
         openButton.setOnAction(event -> {
             FileChooser fileChooser = new FileChooser();
             fileChooser.setTitle("Open Resource File");
@@ -52,6 +54,7 @@ public class MainToolBar extends ToolBar {
             }
         });
 
+        // TODO: Fix this
         saveButton.setOnAction(event -> {
             FileChooser fileChooser = new FileChooser();
             fileChooser.setTitle("Open Resource File");
@@ -63,6 +66,17 @@ public class MainToolBar extends ToolBar {
             File selectedFile = fileChooser.showOpenDialog(stage);
             if (selectedFile != null) {
                 System.out.println("Length: " + selectedFile.length());
+            }
+        });
+
+
+        printButton.setOnAction(event -> {
+            PrinterJob job = PrinterJob.createPrinterJob();
+            if (job != null && job.showPrintDialog(centerContainer.getScene().getWindow())){
+                boolean success = job.printPage(centerContainer);
+                if (success) {
+                    job.endJob();
+                }
             }
         });
 
