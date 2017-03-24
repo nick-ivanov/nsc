@@ -39,22 +39,6 @@ public class RootContainer extends BorderPane {
 
         centerScrollPane.setContent(centerContainer);
 
-//        PrinterJob job = PrinterJob.createPrinterJob();
-//
-//        if (job != null) {
-//            boolean success = job.showPageSetupDialog(this.stage);
-//            if (success) {
-//                boolean printed = job.printPage(centerContainer);
-//
-//                if (printed)
-//                {
-//                    job.endJob();
-//                }
-//
-//            }
-//        }
-
-
         this.setTop(topContainer);
         this.setCenter(centerScrollPane);
     }
