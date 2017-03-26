@@ -20,6 +20,7 @@
 
 package nsc;
 
+import javafx.beans.property.StringProperty;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
@@ -49,6 +50,25 @@ public class BitBox extends HBox {
 
         int messageFieldMaxLength = Integer.parseInt(NSCPropertyHelper.getProperty("message_field_max_length"));
         messageTextField.setPrefColumnCount(messageFieldMaxLength);
+
+        messageTextField.textProperty().addListener(
+                (observable, oldValue, newValue) -> {
+                    boolean isNewValue = true;
+
+                    for(char ch : newValue.toCharArray()) {
+                        if(ch != '1' && ch != '0') {
+                            isNewValue = false;
+                            break;
+                        }
+                    }
+
+                    if(isNewValue) {
+                        ((StringProperty)observable).setValue(newValue);
+                    } else {
+                        ((StringProperty)observable).setValue(oldValue);
+                    }
+                }
+        );
 
         messageTextField.setOnKeyReleased((EventHandler) event -> {
             centerContainer.resetSpinners(messageTextField.getText());
