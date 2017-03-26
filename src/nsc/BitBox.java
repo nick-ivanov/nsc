@@ -60,6 +60,11 @@ public class BitBox extends HBox {
                             isNewValue = false;
                             break;
                         }
+
+                        if(newValue.length() > messageFieldMaxLength || newValue.length() < 2) {
+                            isNewValue = false;
+                            break;
+                        }
                     }
 
                     if(isNewValue) {
