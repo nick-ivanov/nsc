@@ -20,16 +20,18 @@
 
 package nsc;
 
-import javafx.print.PrinterJob;
+import javafx.scene.control.Button;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import org.controlsfx.control.StatusBar;
 
 public class RootContainer extends BorderPane {
     Stage stage;
     ScrollPane centerScrollPane = new ScrollPane();
     CenterContainer centerContainer;
     TopContainer topContainer;
+    StatusBar statusBar;
 
     RootContainer(Stage stage) {
         super();
@@ -39,7 +41,12 @@ public class RootContainer extends BorderPane {
 
         centerScrollPane.setContent(centerContainer);
 
+        statusBar = new StatusBar();
+        statusBar.getLeftItems().add(new Button("Info"));
+        statusBar.setProgress(.5);
+
         this.setTop(topContainer);
         this.setCenter(centerScrollPane);
+        this.setBottom(statusBar);
     }
 }
