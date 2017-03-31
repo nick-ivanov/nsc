@@ -36,14 +36,14 @@ public class RootContainer extends BorderPane {
     RootContainer(Stage stage) {
         super();
         this.stage = stage;
-        centerContainer = new CenterContainer();
+
+        statusBar = new StatusBar();
+        centerContainer = new CenterContainer(statusBar);
         topContainer = new TopContainer(this.stage, centerContainer);
 
         centerScrollPane.setContent(centerContainer);
 
-        statusBar = new StatusBar();
-        statusBar.getLeftItems().add(new Button("Info"));
-        statusBar.setProgress(.5);
+
 
         this.setTop(topContainer);
         this.setCenter(centerScrollPane);

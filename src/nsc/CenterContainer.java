@@ -28,6 +28,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
+import org.controlsfx.control.StatusBar;
 
 class CenterContainer extends VBox {
     private final double quantumWidth = 80;
@@ -35,6 +36,7 @@ class CenterContainer extends VBox {
     private final Color quantumColor = Color.BLACK;
     private final double quantumThickness = 10;
     private int numberOfBits = 8;
+    private int maximumNumberOfBits;
 
     private GridPane grid = new GridPane();
     private Label initial = new Label(NSCPropertyHelper.getProperty("bits_label"));
@@ -42,6 +44,7 @@ class CenterContainer extends VBox {
     private Spinner prev = new Spinner(0, 1, 0);
     private String message;
     private String defaultMessage;
+    private StatusBar statusBar;
 
     private int[] iMsg = new int[numberOfBits];
 
@@ -69,9 +72,11 @@ class CenterContainer extends VBox {
 
     private SignalProcessor processor;
 
-    CenterContainer() {
+    CenterContainer(StatusBar statusBar) {
         super();
+        this.statusBar = statusBar;
         int defaultBitLength = Integer.parseInt(NSCPropertyHelper.getProperty("default_bit_length"));
+        maximumNumberOfBits = Integer.parseInt(NSCPropertyHelper.getProperty("message_field_max_length"));
 
         defaultMessage = "";
         for(int i = 0; i < defaultBitLength; i++) {
@@ -94,6 +99,9 @@ class CenterContainer extends VBox {
     }
 
     public void reloadContainer() {
+        statusBar.setProgress((double) numberOfBits / (double) maximumNumberOfBits);
+        statusBar.setText("Message length: " + numberOfBits + "/" + maximumNumberOfBits);
+
         for(int i = 0; i < numberOfBits; i++) {
             sp[i] = new Spinner(0, 1, 0);
             sp[i].setPadding(new Insets(5));
