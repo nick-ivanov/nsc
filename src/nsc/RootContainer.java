@@ -43,8 +43,6 @@ public class RootContainer extends BorderPane {
 
         centerScrollPane.setContent(centerContainer);
 
-
-
         this.setTop(topContainer);
         this.setCenter(centerScrollPane);
         this.setBottom(statusBar);

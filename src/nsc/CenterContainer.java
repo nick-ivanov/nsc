@@ -100,7 +100,7 @@ class CenterContainer extends VBox {
 
     public void reloadContainer() {
         statusBar.setProgress((double) numberOfBits / (double) maximumNumberOfBits);
-        statusBar.setText("Message length: " + numberOfBits + "/" + maximumNumberOfBits);
+        statusBar.setText("Message length: " + numberOfBits + "/" + maximumNumberOfBits + " bits");
 
         for(int i = 0; i < numberOfBits; i++) {
             sp[i] = new Spinner(0, 1, 0);
@@ -173,7 +173,8 @@ class CenterContainer extends VBox {
         grid.add(idmanchester, 1, 6);
 
         for(int i = 0; i < numberOfBits; i++) {
-            grid.add(sp[i], i+2, 0);
+            //grid.add(sp[i], i+2, 0);
+            grid.add(new Label(String.valueOf(iMsg[i])), i+2, 0);
             sp[i].setMaxWidth(quantumWidth-5);
             for(int j = 0; j < 6; j++) {
                 grid.add(qim[j][i], i+2, j+1);
