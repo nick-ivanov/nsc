@@ -20,7 +20,9 @@
 
 package nsc;
 
+import javafx.geometry.HPos;
 import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.control.Spinner;
 import javafx.scene.image.Image;
@@ -28,6 +30,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
+import org.controlsfx.control.GridView;
 import org.controlsfx.control.StatusBar;
 
 class CenterContainer extends VBox {
@@ -39,6 +42,7 @@ class CenterContainer extends VBox {
     private int maximumNumberOfBits;
 
     private GridPane grid = new GridPane();
+
     private Label initial = new Label(NSCPropertyHelper.getProperty("bits_label"));
     private Spinner[] sp = new Spinner[numberOfBits];
     private Spinner prev = new Spinner(0, 1, 0);
@@ -173,8 +177,10 @@ class CenterContainer extends VBox {
         grid.add(idmanchester, 1, 6);
 
         for(int i = 0; i < numberOfBits; i++) {
-            //grid.add(sp[i], i+2, 0);
-            grid.add(new Label(String.valueOf(iMsg[i])), i+2, 0);
+            Label label = new Label(String.valueOf(iMsg[i]));
+            GridPane.setHalignment(label, HPos.CENTER);
+
+            grid.add(label, i+2, 0);
             sp[i].setMaxWidth(quantumWidth-5);
             for(int j = 0; j < 6; j++) {
                 grid.add(qim[j][i], i+2, j+1);
