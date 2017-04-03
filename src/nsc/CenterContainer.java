@@ -22,7 +22,6 @@ package nsc;
 
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
-import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.control.Spinner;
 import javafx.scene.image.Image;
@@ -30,7 +29,6 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
-import org.controlsfx.control.GridView;
 import org.controlsfx.control.StatusBar;
 
 class CenterContainer extends VBox {
@@ -128,7 +126,6 @@ class CenterContainer extends VBox {
         processor = new SignalProcessor(numberOfBits, qim, iMsg, prev, sp);
         updateSignals();
 
-        // ======= LOOK =================
         prev.setMaxWidth(65);
         prev.setPadding(new Insets(5));
         initial.setPadding(new Insets(5));
@@ -187,7 +184,6 @@ class CenterContainer extends VBox {
             }
         }
 
-        // Add here additional top item
         this.getChildren().clear();
         this.getChildren().addAll(grid);
 
@@ -207,7 +203,4 @@ class CenterContainer extends VBox {
         processor.processManchester();
         processor.processDManchester();
     }
-
-
-
 }
