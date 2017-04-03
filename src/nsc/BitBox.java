@@ -82,6 +82,10 @@ public class BitBox extends HBox {
         this.getChildren().addAll(messageLabel, messageTextField);
     }
 
+    public String getMessage() {
+        return messageTextField.getText();
+    }
+
     public void clear() {
         messageTextField.setText(clearString);
     }

@@ -82,6 +82,7 @@ public class MainToolBar extends ToolBar {
 
         clearButton.setOnAction(event -> {
             bitBox.clear();
+            centerContainer.resetSpinners(bitBox.getMessage());
         });
 
         this.getItems().addAll(openButton, saveButton, printButton, clearButton, bitBox);
