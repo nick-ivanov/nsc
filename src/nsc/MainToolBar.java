@@ -8,7 +8,9 @@ import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 
 public class MainToolBar extends ToolBar {
     private Button saveButton;
@@ -42,7 +44,7 @@ public class MainToolBar extends ToolBar {
             File selectedFile = fileChooser.showOpenDialog(null);
 
             if (selectedFile != null) {
-                System.out.println("File selected: " + selectedFile.getName());
+                System.out.println("File selected: " + selectedFile.getAbsolutePath());
             } else {
                 System.out.println("File selection cancelled.");
             }
@@ -51,15 +53,19 @@ public class MainToolBar extends ToolBar {
         // TODO: Fix this
         saveButton.setOnAction(event -> {
             FileChooser fileChooser = new FileChooser();
-            fileChooser.setTitle("Open Resource File");
-            fileChooser.getExtensionFilters().addAll(
-                    new FileChooser.ExtensionFilter("Text Files", "*.txt"),
-                    new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif"),
-                    new FileChooser.ExtensionFilter("Audio Files", "*.wav", "*.mp3", "*.aac"),
-                    new FileChooser.ExtensionFilter("All Files", "*.*"));
-            File selectedFile = fileChooser.showOpenDialog(stage);
+            File selectedFile = fileChooser.showSaveDialog(null);
+
             if (selectedFile != null) {
-                System.out.println("Length: " + selectedFile.length());
+                System.out.println("File selected: " + selectedFile.getAbsolutePath());
+                try {
+                    BufferedWriter writer = new BufferedWriter(new FileWriter(selectedFile.getAbsolutePath(), false));
+                    writer.append("Hello");
+                    writer.close();
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else {
+                System.out.println("File selection cancelled.");
             }
         });
 
