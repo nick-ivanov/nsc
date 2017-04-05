@@ -61,7 +61,7 @@ public class BitBox extends HBox {
                             break;
                         }
 
-                        if(newValue.length() > messageFieldMaxLength || newValue.length() < 2) {
+                        if(newValue.length() > messageFieldMaxLength) {
                             isNewValue = false;
                             break;
                         }
@@ -75,7 +75,7 @@ public class BitBox extends HBox {
                 }
         );
 
-        messageTextField.setOnKeyReleased((EventHandler) event -> {
+        messageTextField.setOnKeyReleased(event -> {
             centerContainer.resetSpinners(messageTextField.getText());
         });
 
