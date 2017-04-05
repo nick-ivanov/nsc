@@ -37,18 +37,14 @@ public class MainToolBar extends ToolBar {
         clearButton = new Button();
         clearButton.setGraphic(clearButtonImage);
 
-        // TODO: Fix this
         openButton.setOnAction(event -> {
             FileChooser fileChooser = new FileChooser();
-            fileChooser.setTitle("Open Resource File");
-            fileChooser.getExtensionFilters().addAll(
-                    new FileChooser.ExtensionFilter("Text Files", "*.txt"),
-                    new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif"),
-                    new FileChooser.ExtensionFilter("Audio Files", "*.wav", "*.mp3", "*.aac"),
-                    new FileChooser.ExtensionFilter("All Files", "*.*"));
-            File selectedFile = fileChooser.showOpenDialog(stage);
+            File selectedFile = fileChooser.showOpenDialog(null);
+
             if (selectedFile != null) {
-                System.out.println("Length: " + selectedFile.length());
+                System.out.println("File selected: " + selectedFile.getName());
+            } else {
+                System.out.println("File selection cancelled.");
             }
         });
 
