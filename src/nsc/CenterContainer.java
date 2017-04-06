@@ -194,6 +194,10 @@ class CenterContainer extends VBox {
         }
     }
 
+    public String getMessage() {
+        return this.message;
+    }
+
     private void updateSignals()
     {
         processor.processNRZL();
