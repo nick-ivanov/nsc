@@ -59,7 +59,7 @@ public class MainToolBar extends ToolBar {
                 System.out.println("File selected: " + selectedFile.getAbsolutePath());
                 try {
                     BufferedWriter writer = new BufferedWriter(new FileWriter(selectedFile.getAbsolutePath(), false));
-                    writer.append("Hello");
+                    writer.append(centerContainer.getMessage());
                     writer.close();
                 } catch (Exception ex) {
                     System.out.println(ex.getMessage());
@@ -88,5 +88,15 @@ public class MainToolBar extends ToolBar {
         });
 
         this.getItems().addAll(openButton, saveButton, printButton, clearButton, bitBox);
+    }
+
+    private boolean isLegitFile(String msg) {
+        for(char ch : msg.toCharArray()) {
+            if(ch != '1' || ch != '0') {
+                return false;
+            }
+        }
+
+        return true;
     }
 }
