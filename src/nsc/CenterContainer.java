@@ -35,7 +35,9 @@ import org.controlsfx.control.StatusBar;
 
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
+import java.util.Scanner;
 
 class CenterContainer extends VBox {
     private final double quantumWidth = 80;
@@ -204,6 +206,48 @@ class CenterContainer extends VBox {
         return this.message;
     }
 
+    public void openFileCeremony(BitBox bitBox) {
+        FileChooser fileChooser = new FileChooser();
+        File selectedFile = fileChooser.showOpenDialog(null);
+
+        if (selectedFile != null) {
+            System.out.println("File selected: " + selectedFile.getAbsolutePath());
+
+            String s = "";
+
+            try {
+                Scanner in = new Scanner(new FileReader(selectedFile.getAbsolutePath()));
+                StringBuilder sb = new StringBuilder();
+                while(in.hasNext()) {
+                    sb.append(in.next());
+                }
+                in.close();
+                s = sb.toString();
+                in.close();
+            } catch (Exception ex) {
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText("Can't open file.");
+                alert.setContentText(ex.getMessage());
+                alert.showAndWait();                }
+
+            System.out.println("Result: " + isLegitFile(s));
+
+            if(isLegitFile(s)) {
+                bitBox.setMessage(s);
+                resetSpinners(s);
+            } else {
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText("Can't open file.");
+                alert.setContentText("The file can't be open or the data is corrupt.");
+                alert.showAndWait();
+            }
+        } else {
+            System.out.println("File selection cancelled.");
+        }
+    }
+
     public void saveFileCeremony() {
         FileChooser fileChooser = new FileChooser();
         File selectedFile = fileChooser.showSaveDialog(null);
@@ -223,6 +267,22 @@ class CenterContainer extends VBox {
         } else {
             System.out.println("File selection cancelled.");
         }
+    }
+
+    private boolean isLegitFile(String msg) {
+        for(char ch : msg.toCharArray()) {
+            if(ch != '1' && ch != '0') {
+                return false;
+            }
+        }
+
+        int messageFieldMaxLength = Integer.parseInt(NSCPropertyHelper.getProperty("message_field_max_length"));
+
+        if(msg.length() > messageFieldMaxLength) {
+            return false;
+        }
+
+        return true;
     }
 
     private void updateSignals()
