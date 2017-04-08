@@ -22,6 +22,7 @@ package nsc;
 
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.Spinner;
 import javafx.scene.image.Image;
@@ -29,7 +30,12 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
+import javafx.stage.FileChooser;
 import org.controlsfx.control.StatusBar;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 
 class CenterContainer extends VBox {
     private final double quantumWidth = 80;
@@ -196,6 +202,27 @@ class CenterContainer extends VBox {
 
     public String getMessage() {
         return this.message;
+    }
+
+    public void saveFileCeremony() {
+        FileChooser fileChooser = new FileChooser();
+        File selectedFile = fileChooser.showSaveDialog(null);
+
+        if (selectedFile != null) {
+            System.out.println("File selected: " + selectedFile.getAbsolutePath());
+            try {
+                BufferedWriter writer = new BufferedWriter(new FileWriter(selectedFile.getAbsolutePath(), false));
+                writer.append(getMessage());
+                writer.close();
+            } catch (Exception ex) {
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText("Can't save file.");
+                alert.setContentText(ex.getMessage());
+                alert.showAndWait();                }
+        } else {
+            System.out.println("File selection cancelled.");
+        }
     }
 
     private void updateSignals()
