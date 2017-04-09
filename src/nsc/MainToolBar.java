@@ -87,26 +87,27 @@ public class MainToolBar extends ToolBar {
         });
 
         saveButton.setOnAction(event -> {
-            FileChooser fileChooser = new FileChooser();
-            File selectedFile = fileChooser.showSaveDialog(null);
 
-            if (selectedFile != null) {
-                System.out.println("File selected: " + selectedFile.getAbsolutePath());
-                try {
-                    BufferedWriter writer = new BufferedWriter(new FileWriter(selectedFile.getAbsolutePath(), false));
-                    writer.append(centerContainer.getMessage());
-                    writer.close();
-                } catch (Exception ex) {
-                    Alert alert = new Alert(Alert.AlertType.ERROR);
-                    alert.setTitle("Error");
-                    alert.setHeaderText("Can't save file.");
-                    alert.setContentText(ex.getMessage());
-                    alert.showAndWait();                }
-            } else {
-                System.out.println("File selection cancelled.");
-            }
+            centerContainer.saveFileCeremony();
+//            FileChooser fileChooser = new FileChooser();
+//            File selectedFile = fileChooser.showSaveDialog(null);
+//
+//            if (selectedFile != null) {
+//                System.out.println("File selected: " + selectedFile.getAbsolutePath());
+//                try {
+//                    BufferedWriter writer = new BufferedWriter(new FileWriter(selectedFile.getAbsolutePath(), false));
+//                    writer.append(centerContainer.getMessage());
+//                    writer.close();
+//                } catch (Exception ex) {
+//                    Alert alert = new Alert(Alert.AlertType.ERROR);
+//                    alert.setTitle("Error");
+//                    alert.setHeaderText("Can't save file.");
+//                    alert.setContentText(ex.getMessage());
+//                    alert.showAndWait();                }
+//            } else {
+//                System.out.println("File selection cancelled.");
+//            }
         });
-
 
         printButton.setOnAction(event -> {
             PrinterJob job = PrinterJob.createPrinterJob();
