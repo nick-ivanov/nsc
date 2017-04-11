@@ -1,19 +1,11 @@
 package nsc;
 
 import javafx.print.PrinterJob;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ToolBar;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.util.Scanner;
 
 public class MainToolBar extends ToolBar {
     private Button saveButton;
@@ -79,7 +71,7 @@ public class MainToolBar extends ToolBar {
 
         int messageFieldMaxLength = Integer.parseInt(NSCPropertyHelper.getProperty("message_field_max_length"));
 
-        if(msg.length() > messageFieldMaxLength) {
+        if (msg.length() > messageFieldMaxLength) {
             return false;
         }
 
