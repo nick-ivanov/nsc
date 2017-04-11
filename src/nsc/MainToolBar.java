@@ -46,68 +46,10 @@ public class MainToolBar extends ToolBar {
 
         openButton.setOnAction(event -> {
             centerContainer.openFileCeremony(bitBox);
-//            FileChooser fileChooser = new FileChooser();
-//            File selectedFile = fileChooser.showOpenDialog(null);
-//
-//            if (selectedFile != null) {
-//                System.out.println("File selected: " + selectedFile.getAbsolutePath());
-//
-//                String s = "";
-//
-//                try {
-//                    Scanner in = new Scanner(new FileReader(selectedFile.getAbsolutePath()));
-//                    StringBuilder sb = new StringBuilder();
-//                    while(in.hasNext()) {
-//                        sb.append(in.next());
-//                    }
-//                    in.close();
-//                    s = sb.toString();
-//                    in.close();
-//                } catch (Exception ex) {
-//                    Alert alert = new Alert(Alert.AlertType.ERROR);
-//                    alert.setTitle("Error");
-//                    alert.setHeaderText("Can't open file.");
-//                    alert.setContentText(ex.getMessage());
-//                    alert.showAndWait();                }
-//
-//                System.out.println("Result: " + isLegitFile(s));
-//
-//                if(isLegitFile(s)) {
-//                    bitBox.setMessage(s);
-//                    centerContainer.resetSpinners(s);
-//                } else {
-//                    Alert alert = new Alert(Alert.AlertType.ERROR);
-//                    alert.setTitle("Error");
-//                    alert.setHeaderText("Can't open file.");
-//                    alert.setContentText("The file can't be open or the data is corrupt.");
-//                    alert.showAndWait();
-//                }
-//            } else {
-//                System.out.println("File selection cancelled.");
-//            }
         });
 
         saveButton.setOnAction(event -> {
-
             centerContainer.saveFileCeremony();
-//            FileChooser fileChooser = new FileChooser();
-//            File selectedFile = fileChooser.showSaveDialog(null);
-//
-//            if (selectedFile != null) {
-//                System.out.println("File selected: " + selectedFile.getAbsolutePath());
-//                try {
-//                    BufferedWriter writer = new BufferedWriter(new FileWriter(selectedFile.getAbsolutePath(), false));
-//                    writer.append(centerContainer.getMessage());
-//                    writer.close();
-//                } catch (Exception ex) {
-//                    Alert alert = new Alert(Alert.AlertType.ERROR);
-//                    alert.setTitle("Error");
-//                    alert.setHeaderText("Can't save file.");
-//                    alert.setContentText(ex.getMessage());
-//                    alert.showAndWait();                }
-//            } else {
-//                System.out.println("File selection cancelled.");
-//            }
         });
 
         printButton.setOnAction(event -> {
