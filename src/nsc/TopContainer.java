@@ -40,6 +40,8 @@ class TopContainer extends VBox {
     final private MenuBar menuBar;
     final private MainToolBar toolBar;
 
+    final private MenuItem openMenuItem = new MenuItem("Open File...");
+    final private MenuItem saveMenuItem = new MenuItem("Save File...");
     final private MenuItem quitMenuItem = new MenuItem("Quit");
     final private MenuItem manualMenuItem = new MenuItem("Documentation");
     final private MenuItem aboutMenuItem = new MenuItem("About");
