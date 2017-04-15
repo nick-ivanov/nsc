@@ -89,11 +89,15 @@ class TopContainer extends VBox {
                         alert.setContentText(content);
                         alert.showAndWait();
                     }
+
                 };
 
+        openMenuItem.setOnAction(MEHandler);
+        saveMenuItem.setOnAction(MEHandler);
         quitMenuItem.setOnAction(MEHandler);
         manualMenuItem.setOnAction(MEHandler);
         aboutMenuItem.setOnAction(MEHandler);
+
     }
 
 }
