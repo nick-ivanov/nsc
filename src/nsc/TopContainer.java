@@ -50,7 +50,9 @@ class TopContainer extends VBox {
 
     TopContainer(Stage stage, CenterContainer centerContainer) {
         this.centerContainer = centerContainer;
-        fileMenu.getItems().add(quitMenuItem);
+
+        fileMenu.getItems().addAll(openMenuItem, saveMenuItem, quitMenuItem);
+
         helpMenu.getItems().addAll(manualMenuItem, aboutMenuItem);
 
         menuBar = new MenuBar();
@@ -89,7 +91,6 @@ class TopContainer extends VBox {
                         alert.setContentText(content);
                         alert.showAndWait();
                     }
-
                 };
 
         openMenuItem.setOnAction(MEHandler);
