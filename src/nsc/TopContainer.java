@@ -109,4 +109,8 @@ class TopContainer extends VBox {
 
     }
 
+    public BitBox getBitBox() {
+        return toolBar.getBitBox();
+    }
+
 }

@@ -12,6 +12,7 @@ public class MainToolBar extends ToolBar {
     private Button clearButton;
     private Button printButton;
     private Button openButton;
+    private BitBox bitBox;
 
     private CenterContainer centerContainer;
 
@@ -34,10 +35,11 @@ public class MainToolBar extends ToolBar {
         clearButton = new Button();
         clearButton.setGraphic(clearButtonImage);
 
-        BitBox bitBox = new BitBox(centerContainer);
+        bitBox = new BitBox(centerContainer);
+        centerContainer.setBitBox(bitBox);
 
         openButton.setOnAction(event -> {
-            centerContainer.openFileCeremony(bitBox);
+            centerContainer.openFileCeremony();
         });
 
         saveButton.setOnAction(event -> {
@@ -60,6 +62,10 @@ public class MainToolBar extends ToolBar {
         });
 
         this.getItems().addAll(openButton, saveButton, printButton, clearButton, bitBox);
+    }
+
+    public BitBox getBitBox() {
+        return bitBox;
     }
 
     private boolean isLegitFile(String msg) {

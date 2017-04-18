@@ -46,6 +46,7 @@ class CenterContainer extends VBox {
     private final double quantumThickness = 10;
     private int numberOfBits = 8;
     private int maximumNumberOfBits;
+    private BitBox bitBox;
 
     private GridPane grid = new GridPane();
 
@@ -95,6 +96,10 @@ class CenterContainer extends VBox {
 
         message = defaultMessage;
         reloadContainer();
+    }
+
+    public void setBitBox(BitBox bitBox) {
+        this.bitBox = bitBox;
     }
 
     public void resetSpinners(String message) {
@@ -206,7 +211,7 @@ class CenterContainer extends VBox {
         return this.message;
     }
 
-    public void openFileCeremony(BitBox bitBox) {
+    public void openFileCeremony() {
         FileChooser fileChooser = new FileChooser();
         File selectedFile = fileChooser.showOpenDialog(null);
 

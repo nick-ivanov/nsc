@@ -32,6 +32,7 @@ public class RootContainer extends BorderPane {
     CenterContainer centerContainer;
     TopContainer topContainer;
     StatusBar statusBar;
+    BitBox bitBox;
 
     RootContainer(Stage stage) {
         super();
@@ -40,6 +41,7 @@ public class RootContainer extends BorderPane {
         statusBar = new StatusBar();
         centerContainer = new CenterContainer(statusBar);
         topContainer = new TopContainer(this.stage, centerContainer);
+        bitBox = topContainer.getBitBox();
 
         centerScrollPane.setContent(centerContainer);
 
