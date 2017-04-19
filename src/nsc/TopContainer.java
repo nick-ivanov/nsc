@@ -72,7 +72,11 @@ class TopContainer extends VBox {
                     if(name.equals("Open File...")) {
                         centerContainer.openFileCeremony();
                     }
-                    
+
+                    if(name.equals("Save File...")) {
+                        centerContainer.saveFileCeremony();
+                    }
+
                     if(name.equals("Quit")) { Platform.exit(); }
 
                     if(name.equals("Documentation")) {
