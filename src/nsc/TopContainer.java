@@ -70,11 +70,9 @@ class TopContainer extends VBox {
                     String name = ((MenuItem)ae.getTarget()).getText();
 
                     if(name.equals("Open File...")) {
-                        System.out.println("Open File");
-                        //centerContainer.openFileCeremony();
+                        centerContainer.openFileCeremony();
                     }
-
-
+                    
                     if(name.equals("Quit")) { Platform.exit(); }
 
                     if(name.equals("Documentation")) {
