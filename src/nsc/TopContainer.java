@@ -52,7 +52,7 @@ class TopContainer extends VBox {
     TopContainer(Stage stage, CenterContainer centerContainer) {
         this.centerContainer = centerContainer;
 
-        fileMenu.getItems().addAll(openMenuItem, saveMenuItem, quitMenuItem);
+        fileMenu.getItems().addAll(openMenuItem, saveMenuItem, printMenuItem, quitMenuItem);
 
         helpMenu.getItems().addAll(manualMenuItem, aboutMenuItem);
 
