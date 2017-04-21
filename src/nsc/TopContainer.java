@@ -23,6 +23,7 @@ package nsc;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.print.PrinterJob;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Menu;
@@ -78,6 +79,16 @@ class TopContainer extends VBox {
                         centerContainer.saveFileCeremony();
                     }
 
+                    if(name.equals("Print...")) {
+                        PrinterJob job = PrinterJob.createPrinterJob();
+                        if (job != null && job.showPrintDialog(centerContainer.getScene().getWindow())){
+                            boolean success = job.printPage(centerContainer);
+                            if (success) {
+                                job.endJob();
+                            }
+                        }
+                    }
+
                     if(name.equals("Quit")) { Platform.exit(); }
 
                     if(name.equals("Documentation")) {
@@ -106,6 +117,7 @@ class TopContainer extends VBox {
 
         openMenuItem.setOnAction(MEHandler);
         saveMenuItem.setOnAction(MEHandler);
+        printMenuItem.setOnAction(MEHandler);
         quitMenuItem.setOnAction(MEHandler);
         manualMenuItem.setOnAction(MEHandler);
         aboutMenuItem.setOnAction(MEHandler);
