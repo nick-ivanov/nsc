@@ -58,6 +58,8 @@ class TopContainer extends VBox {
 
         fileMenu.getItems().addAll(openMenuItem, saveMenuItem, printMenuItem, quitMenuItem);
 
+        editMenu.getItems().addAll(resetMenuItem);
+
         helpMenu.getItems().addAll(manualMenuItem, aboutMenuItem);
 
         menuBar = new MenuBar();
