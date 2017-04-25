@@ -290,6 +290,10 @@ class CenterContainer extends VBox {
         return true;
     }
 
+    public BitBox getBitBox() {
+        return bitBox;
+    }
+
     private void updateSignals()
     {
         processor.processNRZL();
