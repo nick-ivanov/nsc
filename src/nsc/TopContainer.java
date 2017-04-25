@@ -46,7 +46,7 @@ class TopContainer extends VBox {
     final private MenuItem printMenuItem = new MenuItem("Print...");
     final private MenuItem quitMenuItem = new MenuItem("Quit");
 
-    final private MenuItem resetMenuItem = new MenuItem("Reset message");
+    final private MenuItem resetMenuItem = new MenuItem("Reset Message");
 
     final private MenuItem manualMenuItem = new MenuItem("Documentation");
     final private MenuItem aboutMenuItem = new MenuItem("About");
@@ -96,6 +96,10 @@ class TopContainer extends VBox {
 
                     if(name.equals("Quit")) { Platform.exit(); }
 
+                    if(name.equals("Reset Message")) {
+                        System.out.println("Reset Message stub");
+                    }
+
                     if(name.equals("Documentation")) {
                         Alert alert = new Alert(AlertType.INFORMATION);
                         alert.setTitle("Network Signal Coder Help");
@@ -124,6 +128,7 @@ class TopContainer extends VBox {
         saveMenuItem.setOnAction(MEHandler);
         printMenuItem.setOnAction(MEHandler);
         quitMenuItem.setOnAction(MEHandler);
+        resetMenuItem.setOnAction(MEHandler);
         manualMenuItem.setOnAction(MEHandler);
         aboutMenuItem.setOnAction(MEHandler);
 
