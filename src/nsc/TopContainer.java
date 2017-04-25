@@ -98,6 +98,16 @@ class TopContainer extends VBox {
 
                     if(name.equals("Reset Message")) {
                         System.out.println("Reset Message stub");
+                        centerContainer.getBitBox().clear();
+
+                        int defaultBitLength = Integer.parseInt(NSCPropertyHelper.getProperty("default_bit_length"));
+
+                        String clearString = "";
+                        for(int i = 0; i < defaultBitLength; i++) {
+                            clearString += "0";
+                        }
+
+                        centerContainer.resetSpinners(clearString);
                     }
 
                     if(name.equals("Documentation")) {
