@@ -35,16 +35,15 @@ public class FittingTest extends Application {
         launch(args);
     }
 
-    HBox grid;
-    SignalQuantumImage image1 = new SignalQuantumImage(55, 55, BLUE, 3, "345");
-    SignalQuantumImage image2 = new SignalQuantumImage(55, 55, RED, 5, "1473");
+    private HBox grid;
+    private SignalQuantumImage image1 = new SignalQuantumImage(55, 55, BLUE, 3, "345");
+    private SignalQuantumImage image2 = new SignalQuantumImage(55, 55, RED, 5, "1473");
 
     @Override
     public void start(Stage primaryStage) {
         grid = new HBox();
         grid.setPadding(new Insets(0));
         grid.getChildren().addAll(image1, image2);
-
 
         drawImages();
 
