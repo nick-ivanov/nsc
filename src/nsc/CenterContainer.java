@@ -283,11 +283,7 @@ class CenterContainer extends VBox {
 
         int messageFieldMaxLength = Integer.parseInt(NSCPropertyHelper.getProperty("message_field_max_length"));
 
-        if(msg.length() > messageFieldMaxLength) {
-            return false;
-        }
-
-        return true;
+        return msg.length() <= messageFieldMaxLength;
     }
 
     public BitBox getBitBox() {
