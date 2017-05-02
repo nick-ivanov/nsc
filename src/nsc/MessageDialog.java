@@ -20,7 +20,6 @@
 
 package nsc;
 
-import java.util.HashMap;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -95,7 +94,7 @@ public class MessageDialog {
         HBox dialogHbox = new HBox(20);
         dialogHbox.setAlignment(Pos.CENTER);
 
-        bookmarkNameTextInput.setOnKeyReleased((EventHandler) event -> {
+        bookmarkNameTextInput.setOnKeyReleased((EventHandler<javafx.event.Event>) event -> {
             if (!bookmarkNameTextInput.getText().equals("")) {
                 addButton.setDisable(false);
             } else {
@@ -103,7 +102,7 @@ public class MessageDialog {
             }
         });
 
-        urlTextInput.setOnKeyReleased((EventHandler) event -> {
+        urlTextInput.setOnKeyReleased((EventHandler<javafx.event.Event>) event -> {
             if (!urlTextInput.getText().equals("")) {
                 addButton.setDisable(false);
             } else {
@@ -112,24 +111,15 @@ public class MessageDialog {
         });
 
         addButton.addEventHandler(MouseEvent.MOUSE_CLICKED,
-                new EventHandler<MouseEvent>() {
-                    @Override
-                    public void handle(MouseEvent e) {
-                        System.out.println("data: " + bookmarkNameTextInput.getText());
-                        dialog.close();
-                    }
+                e -> {
+                    System.out.println("data: " + bookmarkNameTextInput.getText());
+                    dialog.close();
                 });
 
         cancelButton.addEventHandler(MouseEvent.MOUSE_CLICKED,
-                new EventHandler<MouseEvent>() {
-                    @Override
-                    public void handle(MouseEvent e) {
-                        dialog.close();
-                    }
-                });
+                e -> dialog.close());
 
         Scene dialogScene = new Scene(vbox, 640, 480);
-        //dialogScene.getStylesheets().add("//style sheet of your choice");
         dialog.setScene(dialogScene);
         dialog.show();
     }
