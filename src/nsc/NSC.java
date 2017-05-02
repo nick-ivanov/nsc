@@ -24,17 +24,16 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class NSC extends Application {
-    private RootContainer rootContainer;
-    private Scene scene;
+import java.util.Objects;
 
+public class NSC extends Application {
     @Override
     public void start(Stage primaryStage) {
-        int defaultWidth = Integer.parseInt(NSCPropertyHelper.getProperty("default_width").trim());
-        int defaultHeight = Integer.parseInt(NSCPropertyHelper.getProperty("default_height").trim());
+        int defaultWidth = Integer.parseInt(Objects.requireNonNull(NSCPropertyHelper.getProperty("default_width")).trim());
+        int defaultHeight = Integer.parseInt(Objects.requireNonNull(NSCPropertyHelper.getProperty("default_height")).trim());
 
-        rootContainer = new RootContainer(primaryStage);
-        scene = new Scene(rootContainer, defaultWidth, defaultHeight);
+        RootContainer rootContainer = new RootContainer(primaryStage);
+        Scene scene = new Scene(rootContainer, defaultWidth, defaultHeight);
         primaryStage.setTitle(NSCPropertyHelper.getProperty("application_name"));
         primaryStage.setScene(scene);
         primaryStage.show();
