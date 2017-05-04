@@ -33,12 +33,6 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 class TopContainer extends VBox {
-    final private Menu fileMenu = new Menu("File");
-    final private Menu editMenu = new Menu("Edit");
-    final private Menu viewMenu = new Menu("View");
-    final private Menu helpMenu = new Menu("Help");
-
-    final private MenuBar menuBar;
     final private MainToolBar toolBar;
 
     final private MenuItem openMenuItem = new MenuItem("Open File...");
@@ -56,13 +50,17 @@ class TopContainer extends VBox {
     TopContainer(Stage stage, CenterContainer centerContainer) {
         this.centerContainer = centerContainer;
 
+        Menu fileMenu = new Menu("File");
         fileMenu.getItems().addAll(openMenuItem, saveMenuItem, printMenuItem, quitMenuItem);
 
+        Menu editMenu = new Menu("Edit");
         editMenu.getItems().addAll(resetMenuItem);
 
+        Menu helpMenu = new Menu("Help");
         helpMenu.getItems().addAll(manualMenuItem, aboutMenuItem);
 
-        menuBar = new MenuBar();
+        MenuBar menuBar = new MenuBar();
+        Menu viewMenu = new Menu("View");
         menuBar.getMenus().addAll(fileMenu, editMenu, viewMenu, helpMenu);
 
         toolBar = new MainToolBar(stage, centerContainer);
@@ -130,8 +128,6 @@ class TopContainer extends VBox {
                         alert.setContentText(content);
                         alert.showAndWait();
                     }
-
-
                 };
 
         openMenuItem.setOnAction(MEHandler);
@@ -141,7 +137,6 @@ class TopContainer extends VBox {
         resetMenuItem.setOnAction(MEHandler);
         manualMenuItem.setOnAction(MEHandler);
         aboutMenuItem.setOnAction(MEHandler);
-
     }
 
     public BitBox getBitBox() {
