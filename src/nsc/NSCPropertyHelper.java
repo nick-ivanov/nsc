@@ -4,8 +4,8 @@ import java.util.*;
 import java.io.*;
 
 public class NSCPropertyHelper {
-    final static String PROPERTY_FILEPATH = "src/nsc/application.properties";
-    final static int ERROR_EXIT_CODE = 1;
+    private final static String PROPERTY_FILEPATH = "src/nsc/application.properties";
+    private final static int ERROR_EXIT_CODE = 1;
 
     static String getProperty(String property) {
         try {
