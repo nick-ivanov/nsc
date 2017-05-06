@@ -20,29 +20,23 @@
 
 package nsc;
 
-import javafx.scene.control.Button;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import org.controlsfx.control.StatusBar;
 
-public class RootContainer extends BorderPane {
-    Stage stage;
-    ScrollPane centerScrollPane = new ScrollPane();
-    CenterContainer centerContainer;
-    TopContainer topContainer;
-    StatusBar statusBar;
-    BitBox bitBox;
+class RootContainer extends BorderPane {
 
     RootContainer(Stage stage) {
         super();
-        this.stage = stage;
+        Stage stage1 = stage;
 
-        statusBar = new StatusBar();
-        centerContainer = new CenterContainer(statusBar);
-        topContainer = new TopContainer(this.stage, centerContainer);
-        bitBox = topContainer.getBitBox();
+        StatusBar statusBar = new StatusBar();
+        CenterContainer centerContainer = new CenterContainer(statusBar);
+        TopContainer topContainer = new TopContainer(stage1, centerContainer);
+        BitBox bitBox = topContainer.getBitBox();
 
+        ScrollPane centerScrollPane = new ScrollPane();
         centerScrollPane.setContent(centerContainer);
 
         this.setTop(topContainer);
