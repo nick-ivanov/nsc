@@ -26,14 +26,13 @@ public class SignalProcessor {
     private int numberOfBits;
     private SignalQuantumImage[][] qim;
     private Spinner<Integer> prev;
-    private Spinner<Integer>[] sp;
     private int[] iMsg;
 
     SignalProcessor(int numberOfBits, SignalQuantumImage[][] qim, int[] iMsg, Spinner<Integer> prev, Spinner<Integer>[] sp) {
         this.numberOfBits = numberOfBits;
         this.qim = qim;
         this.prev = prev;
-        this.sp = sp;
+        Spinner<Integer>[] sp1 = sp;
         this.iMsg = iMsg;
     }
 
@@ -148,7 +147,6 @@ public class SignalProcessor {
     public void processDManchester()
     {
         int a, p;
-
         p = prev.getValue();
 
         for(int i = 0; i < numberOfBits; i++) {
