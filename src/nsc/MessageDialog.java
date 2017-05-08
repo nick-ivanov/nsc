@@ -34,11 +34,9 @@ import javafx.stage.Stage;
 
 public class MessageDialog {
 
-    private String message;
     private CenterContainer container;
 
     public MessageDialog(CenterContainer container, String message) {
-        this.message = message;
         this.container = container;
     }
 
@@ -47,7 +45,7 @@ public class MessageDialog {
         dialog.setTitle("Enter binary message");
 
         dialog.initModality(Modality.NONE);
-        dialog.initOwner((Stage) container.getScene().getWindow());
+        dialog.initOwner(container.getScene().getWindow());
 
         VBox vbox = new VBox();
         vbox.setPadding(new Insets(15));
