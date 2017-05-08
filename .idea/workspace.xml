@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Save button file dialog">
-      <change beforePath="$PROJECT_DIR$/src/nsc/MessageDialog.java" afterPath="$PROJECT_DIR$/src/nsc/MessageDialog.java" />
+      <change beforePath="$PROJECT_DIR$/src/nsc/MainToolBar.java" afterPath="$PROJECT_DIR$/src/nsc/MainToolBar.java" />
+      <change beforePath="$PROJECT_DIR$/src/nsc/TopContainer.java" afterPath="$PROJECT_DIR$/src/nsc/TopContainer.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,7 +77,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageDialog.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MessageDialog.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nsc/MessageDialog.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1086">
@@ -86,11 +87,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MainToolBar.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/nsc/MainToolBar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="TopContainer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nsc/TopContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="740">
-              <caret line="129" column="21" lean-forward="false" selection-start-line="129" selection-start-column="21" selection-end-line="129" selection-end-column="21" />
+            <state relative-caret-position="0">
+              <caret line="44" column="31" lean-forward="false" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -220,11 +231,11 @@
         <option value="$PROJECT_DIR$/src/nsc/FittingTest.java" />
         <option value="$PROJECT_DIR$/src/nsc/NSC.java" />
         <option value="$PROJECT_DIR$/src/nsc/NSCPropertyHelper.java" />
-        <option value="$PROJECT_DIR$/src/nsc/MainToolBar.java" />
-        <option value="$PROJECT_DIR$/src/nsc/TopContainer.java" />
         <option value="$PROJECT_DIR$/src/nsc/SignalProcessor.java" />
         <option value="$PROJECT_DIR$/src/nsc/RootContainer.java" />
         <option value="$PROJECT_DIR$/src/nsc/MessageDialog.java" />
+        <option value="$PROJECT_DIR$/src/nsc/TopContainer.java" />
+        <option value="$PROJECT_DIR$/src/nsc/MainToolBar.java" />
       </list>
     </option>
   </component>
@@ -821,7 +832,7 @@
       <workItem from="1469942963628" duration="6431000" />
       <workItem from="1470692197578" duration="140000" />
       <workItem from="1470692491104" duration="701000" />
-      <workItem from="1515122423321" duration="54682000" />
+      <workItem from="1515122423321" duration="54787000" />
     </task>
     <task id="LOCAL-00001" summary="Added License.txt">
       <created>1469223902046</created>
@@ -1128,7 +1139,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99045000" />
+    <option name="totallyTimeSpent" value="99150000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="840" extended-state="6" />
@@ -1412,14 +1423,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nsc/MainToolBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nsc/License.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
@@ -1456,14 +1459,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
           <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nsc/TopContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="129" column="21" lean-forward="false" selection-start-line="129" selection-start-column="21" selection-end-line="129" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1528,6 +1523,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1086">
           <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nsc/TopContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="44" column="31" lean-forward="false" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nsc/MainToolBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>

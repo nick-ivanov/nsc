@@ -25,12 +25,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ToolBar;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.stage.Stage;
 
 public class MainToolBar extends ToolBar {
     private BitBox bitBox;
 
-    MainToolBar(Stage stage, CenterContainer centerContainer) {
+    MainToolBar(CenterContainer centerContainer) {
         ImageView openButtonImage = new ImageView(new Image("nsc/images/open_button.png"));
         Button openButton = new Button();
         openButton.setGraphic(openButtonImage);
