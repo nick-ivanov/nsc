@@ -32,13 +32,15 @@ public class BitBox extends HBox {
 
     public BitBox(CenterContainer centerContainer) {
         super();
-
         int defaultBitLength = Integer.parseInt(NSCPropertyHelper.getProperty("default_bit_length"));
 
-        clearString = "";
+        StringBuilder clearStringBuilder = new StringBuilder("");
+
         for(int i = 0; i < defaultBitLength; i++) {
-            clearString += "0";
+            clearStringBuilder.append("0");
         }
+
+        String clearString = clearStringBuilder.toString();
 
         this.setAlignment(Pos.BASELINE_CENTER);
         Label messageLabel = new Label("Message: ");
