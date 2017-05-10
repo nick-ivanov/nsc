@@ -26,13 +26,16 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 
+import java.util.Objects;
+
 public class BitBox extends HBox {
     private TextField messageTextField;
     private String clearString;
 
     public BitBox(CenterContainer centerContainer) {
         super();
-        int defaultBitLength = Integer.parseInt(NSCPropertyHelper.getProperty("default_bit_length"));
+        int defaultBitLength = Integer.parseInt(
+                Objects.requireNonNull(NSCPropertyHelper.getProperty("default_bit_length")));
 
         StringBuilder clearStringBuilder = new StringBuilder("");
 
@@ -46,7 +49,8 @@ public class BitBox extends HBox {
         Label messageLabel = new Label("Message: ");
         messageTextField = new TextField(clearString);
 
-        int messageFieldMaxLength = Integer.parseInt(NSCPropertyHelper.getProperty("message_field_max_length"));
+        int messageFieldMaxLength = Integer.parseInt(
+                Objects.requireNonNull(NSCPropertyHelper.getProperty("message_field_max_length")));
         messageTextField.setPrefColumnCount(messageFieldMaxLength);
 
         messageTextField.textProperty().addListener(
