@@ -1,4 +1,4 @@
-#NSC - Network Signal Coder
+# NSC - Network Signal Coder
 Copyright (C) 2015-2017 Nick Ivanov <nnrowan@gmail.com>
 
 LICENSE: GNU General Public License ver. 3 ==

@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="NSC:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/NSC_jar</output-path>
+    <root id="archive" name="NSC.jar">
+      <element id="module-output" name="NSC" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/controlsfx-8.40.14.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Dropbox/proj/nsc/lib/controlsfx-8.40.14.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
