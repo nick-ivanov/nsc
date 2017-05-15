@@ -6,8 +6,13 @@ GNU General Public License ver. 3
 https://www.gnu.org/licenses/gpl-3.0.en.html
 
 ## SETUP AND USE
-* Make sure Java 8 (JRE or JDK) is installed: it is free and takes a couple of minutes.
-* Enjoy!
+
+### Setup
+Make sure Java 8 (JRE or JDK) is installed: it is free and takes a couple of minutes.
+
+### Main Window
+![NSC Screenshot 1](https://raw.githubusercontent.com/nick-ivanov/nsc/master/screenshots/screenshot1.png)
+
 
 ## QUESTIONS, FEEDBACK, BUGS
 * nnrowan@gmail.com
