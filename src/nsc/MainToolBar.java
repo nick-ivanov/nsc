@@ -73,7 +73,7 @@ public class MainToolBar extends ToolBar {
             bitBox.clear();
             centerContainer.resetSpinners(bitBox.getMessage());
         });
-        
+
         Separator separator = new Separator(Orientation.VERTICAL);
         this.getItems().addAll(openButton, saveButton, printButton, clearButton, separator, bitBox);
     }
