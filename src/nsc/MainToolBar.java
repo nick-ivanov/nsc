@@ -20,8 +20,10 @@
 
 package nsc;
 
+import javafx.geometry.Orientation;
 import javafx.print.PrinterJob;
 import javafx.scene.control.Button;
+import javafx.scene.control.Separator;
 import javafx.scene.control.ToolBar;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -71,8 +73,9 @@ public class MainToolBar extends ToolBar {
             bitBox.clear();
             centerContainer.resetSpinners(bitBox.getMessage());
         });
-
-        this.getItems().addAll(openButton, saveButton, printButton, clearButton, bitBox);
+        
+        Separator separator = new Separator(Orientation.VERTICAL);
+        this.getItems().addAll(openButton, saveButton, printButton, clearButton, separator, bitBox);
     }
 
     public BitBox getBitBox() {
