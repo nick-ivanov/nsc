@@ -43,7 +43,7 @@ public class BitBox extends HBox {
             clearStringBuilder.append("0");
         }
 
-        String clearString = clearStringBuilder.toString();
+        clearString = clearStringBuilder.toString();
 
         this.setAlignment(Pos.BASELINE_CENTER);
         Label messageLabel = new Label("Message: ");
