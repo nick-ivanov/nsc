@@ -6,7 +6,7 @@ GNU General Public License ver. 3
 https://www.gnu.org/licenses/gpl-3.0.en.html
 
 ## ABOUT NSC
-NSC is a GUI utility which converts a binary sequence into a network signal in one of six codings:
+NSC is a GUI utility which converts a binary sequence into a network signal in one of six codings: NRZ-L, Polar NRZ-L, NRZ-I, Bipolar AMI, Manchester and Differential Manchester.
 
 ## INSTALLATION AND RUN
 
