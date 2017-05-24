@@ -5,7 +5,10 @@ Copyright (C) 2015-2017 Nick Ivanov <nnrowan@gmail.com>
 GNU General Public License ver. 3
 https://www.gnu.org/licenses/gpl-3.0.en.html
 
-## SETUP AND RUN
+## ABOUT NSC
+NSC is a GUI utility which converts a binary sequence into a network signal in one of six codings:
+
+## INSTALLATION AND RUN
 
 1. Make sure Java 8 (JRE or JDK) is installed: it is free and takes a couple of minutes. Here is the link:
 http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
